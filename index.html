@@ -173,31 +173,31 @@
     <div class="match-list">
       <div class="match-card reveal">
         <div>
-          <div class="match-teams">USA <em>vs</em> Paraguay</div>
-          <div class="match-venue">Group D · SoFi Stadium, LA</div>
+          <div class="match-teams">Morocco <em>vs</em> Portugal</div>
+          <div class="match-venue">Group H · BC Place, Vancouver</div>
         </div>
-        <div class="match-meta"><div class="match-date">Jun 12</div><div class="match-time">9 PM ET</div></div>
+        <div class="match-meta"><div class="match-date">Jun 20</div><div class="match-time">7 PM ET</div></div>
       </div>
       <div class="match-card reveal reveal-delay-1">
         <div>
-          <div class="match-teams">Canada <em>vs</em> Bosnia</div>
-          <div class="match-venue">Group B · BMO Field, Toronto</div>
+          <div class="match-teams">England <em>vs</em> Nigeria</div>
+          <div class="match-venue">Group D · AT&T Stadium, Dallas</div>
         </div>
-        <div class="match-meta"><div class="match-date">Jun 12</div><div class="match-time">3 PM ET</div></div>
+        <div class="match-meta"><div class="match-date">Jun 21</div><div class="match-time">8 PM ET</div></div>
       </div>
       <div class="match-card reveal reveal-delay-2">
         <div>
-          <div class="match-teams">Brazil <em>vs</em> Morocco</div>
-          <div class="match-venue">Group C · MetLife Stadium, NJ</div>
+          <div class="match-teams">USA <em>vs</em> Australia</div>
+          <div class="match-venue">Group B · NRG Stadium, Houston</div>
         </div>
-        <div class="match-meta"><div class="match-date">Jun 13</div><div class="match-time">6 PM ET</div></div>
+        <div class="match-meta"><div class="match-date">Jun 22</div><div class="match-time">9 PM ET</div></div>
       </div>
       <div class="match-card reveal reveal-delay-3">
         <div>
-          <div class="match-teams">Spain <em>vs</em> Cape Verde</div>
-          <div class="match-venue">Group H · Atlanta</div>
+          <div class="match-teams">Brazil <em>vs</em> Scotland</div>
+          <div class="match-venue">Group C · Mercedes-Benz Stadium, Atlanta</div>
         </div>
-        <div class="match-meta"><div class="match-date">Jun 15</div><div class="match-time">1 PM ET</div></div>
+        <div class="match-meta"><div class="match-date">Jun 23</div><div class="match-time">8 PM ET</div></div>
       </div>
     </div>
   </div>
@@ -454,13 +454,19 @@
   <div class="field"><label class="field-lbl" for="ceoName">CEO / Contact Name *</label><input type="text" id="ceoName" class="field-inp" placeholder="e.g. John Doe"></div>
   <div class="field"><label class="field-lbl" for="bizName">Business Name *</label><input type="text" id="bizName" class="field-inp" placeholder="e.g. Acme Corp."></div>
   <div class="field"><label class="field-lbl" for="bizNature">Industry *</label>
-    <select id="bizNature" class="field-inp">
-      <option value="" disabled selected>Select your industry</option>
-      <option>Retail & E-commerce</option><option>Food & Beverage</option>
-      <option>Sports & Fitness</option><option>Technology & Software</option>
-      <option>Financial Services</option><option>Fashion & Apparel</option>
-      <option>Healthcare & Wellness</option><option>Media & Entertainment</option>
-      <option>Travel & Tourism</option><option>Real Estate</option><option>Other</option>
+    <select id="bizNature" name="bizNature" class="field-inp">
+      <option value="" disabled hidden selected>Select your industry</option>
+      <option value="Retail & E-commerce">Retail & E-commerce</option>
+      <option value="Food & Beverage">Food & Beverage</option>
+      <option value="Sports & Fitness">Sports & Fitness</option>
+      <option value="Technology & Software">Technology & Software</option>
+      <option value="Financial Services">Financial Services</option>
+      <option value="Fashion & Apparel">Fashion & Apparel</option>
+      <option value="Healthcare & Wellness">Healthcare & Wellness</option>
+      <option value="Media & Entertainment">Media & Entertainment</option>
+      <option value="Travel & Tourism">Travel & Tourism</option>
+      <option value="Real Estate">Real Estate</option>
+      <option value="Other">Other</option>
     </select>
   </div>
   <div class="field"><label class="field-lbl" for="contactEmail">Email Address *</label><input type="email" id="contactEmail" class="field-inp" placeholder="you@yourbusiness.com"></div>
@@ -489,16 +495,32 @@
     <div class="field-hint">We accept high-quality JPEG images and high-quality video files (MP4/MOV). We'll email you to collect your creative after payment is confirmed.</div>
   </div>
   <div class="field"><label class="field-lbl" for="country">Country *</label>
-    <select id="country" class="field-inp">
-      <option value="" disabled selected>Select country</option>
-      <option>Argentina</option><option>Australia</option><option>Brazil</option>
-      <option>Canada</option><option>China</option><option>Egypt</option>
-      <option>France</option><option>Germany</option><option>Ghana</option>
-      <option>India</option><option>Italy</option><option>Japan</option>
-      <option>Kenya</option><option>Mexico</option><option>Morocco</option>
-      <option>Nigeria</option><option>Saudi Arabia</option><option>South Africa</option>
-      <option>South Korea</option><option>Spain</option><option>United Arab Emirates</option>
-      <option>United Kingdom</option><option>United States</option><option>Other</option>
+    <select id="country" name="country" class="field-inp">
+      <option value="" disabled hidden selected>Select country</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Australia">Australia</option>
+      <option value="Brazil">Brazil</option>
+      <option value="Canada">Canada</option>
+      <option value="China">China</option>
+      <option value="Egypt">Egypt</option>
+      <option value="France">France</option>
+      <option value="Germany">Germany</option>
+      <option value="Ghana">Ghana</option>
+      <option value="India">India</option>
+      <option value="Italy">Italy</option>
+      <option value="Japan">Japan</option>
+      <option value="Kenya">Kenya</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Morocco">Morocco</option>
+      <option value="Nigeria">Nigeria</option>
+      <option value="Saudi Arabia">Saudi Arabia</option>
+      <option value="South Africa">South Africa</option>
+      <option value="South Korea">South Korea</option>
+      <option value="Spain">Spain</option>
+      <option value="United Arab Emirates">United Arab Emirates</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="United States">United States</option>
+      <option value="Other">Other</option>
     </select>
   </div>
 

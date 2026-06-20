@@ -430,9 +430,12 @@ nav{
 .field-inp.err{border-color:var(--red);animation:shake 0.3s ease}
 @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
 select.field-inp{
+  position:relative;
+  z-index:1;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238A97AE' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
   background-repeat:no-repeat;background-position:right 14px center;
   padding-right:36px;background-color:rgba(255,255,255,0.04);
+  cursor:pointer;
 }
 select.field-inp option{background:#0A1628}
 textarea.field-inp{resize:vertical;min-height:84px;line-height:1.6}
