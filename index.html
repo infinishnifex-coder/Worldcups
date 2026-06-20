@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIFA World Cup 2026 — Ad Spotlight Booking</title>
+<meta name="description" content="Book your video ad slot during FIFA World Cup 2026. 15–60 second broadcast spots, confirmed via on-chain Ethereum payment. Reach 5 billion viewers across 200+ countries.">
+<meta property="og:title" content="FIFA World Cup 2026 — Ad Spotlight Booking">
+<meta property="og:description" content="Book your broadcast ad slot for World Cup 2026. Confirmed on-chain via ETH. Reach 5B+ viewers worldwide.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#060F1E">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --gold:#E8A020;--gold-l:#F5C55A;--gold-d:#A0680A;--gold-glow:rgba(232,160,32,0.25);
+  --navy:#060F1E;--navy-m:#0A1628;--navy-l:#12213A;--navy-glass:rgba(10,22,40,0.75);
+  --red:#D42B23;--green:#12A155;--green-l:#4ADE80;
+  --white:#FFF;--gray:#8A97AE;--gray-l:#B4BECF;
+  --eth:#627EEA;--eth-l:#8FA3F0;--eth-glow:rgba(98,126,234,0.2);
+  --radius:14px;--radius-lg:20px;
+  --shadow:0 20px 60px rgba(0,0,0,0.5);
+  --shadow-gold:0 0 40px rgba(232,160,32,0.15);
+}
+
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--white);min-height:100vh;overflow-x:hidden}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-track{background:var(--navy)}
+::-webkit-scrollbar-thumb{background:var(--gold-d);border-radius:4px}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 24px;height:58px;
+  background:rgba(6,15,30,0.88);
+  backdrop-filter:blur(20px) saturate(180%);
+  border-bottom:1px solid rgba(232,160,32,0.15);
+  box-shadow:0 1px 30px rgba(0,0,0,0.4);
+}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:4px;color:var(--gold)}
+.nav-logo span{color:rgba(255,255,255,0.9)}
+.nav-links{display:flex;align-items:center;gap:20px}
+.nav-link{font-size:11px;font-weight:700;color:var(--gray-l);text-decoration:none;letter-spacing:0.8px;text-transform:uppercase;transition:color 0.2s}
+.nav-link:hover{color:var(--gold)}
+.nav-cta{
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);
+  color:var(--navy);padding:8px 18px;border-radius:8px;
+  font-size:11px;font-weight:900;text-decoration:none;letter-spacing:0.5px;
+  box-shadow:0 4px 16px rgba(232,160,32,0.35);
+  transition:transform 0.15s,box-shadow 0.15s;
+  white-space:nowrap;
+}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(232,160,32,0.5)}
+@media(max-width:520px){
+  .nav-link{display:none!important}
+  .nav-cta{font-size:10px;padding:7px 14px}
+}
+
+/* ── TICKER ── */
+.ticker-wrap{
+  position:relative;overflow:hidden;
+  background:linear-gradient(90deg,var(--red) 0%,#B01A13 100%);
+  padding:9px 0;margin-top:58px;
+}
+.ticker-wrap::before,.ticker-wrap::after{
+  content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;
+}
+.ticker-wrap::before{left:0;background:linear-gradient(to right,var(--red),transparent)}
+.ticker-wrap::after{right:0;background:linear-gradient(to left,var(--red),transparent)}
+.ticker-inner{
+  display:flex;gap:48px;
+  animation:tickerScroll 35s linear infinite;
+  white-space:nowrap;
+}
+.ticker-inner span{
+  font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  display:flex;align-items:center;gap:8px;
+}
+.ticker-dot-live{
+  width:6px;height:6px;border-radius:50%;background:#fff;
+  animation:blink 1.2s ease-in-out infinite;flex-shrink:0;
+}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:80px 24px 60px;
+  position:relative;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background-image:url('images/img1.jpg');
+  background-size:cover;background-position:center;
+  filter:brightness(0.22) saturate(1.3);
+  transform:scale(1.05);
+  transition:transform 8s ease;
+}
+.hero:hover .hero-bg{transform:scale(1.0)}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 90% 70% at 50% 30%,rgba(232,160,32,0.12) 0%,transparent 65%),
+    radial-gradient(ellipse 60% 50% at 50% 90%,rgba(6,15,30,0.9) 0%,transparent 100%),
+    linear-gradient(to bottom,rgba(6,15,30,0.1) 0%,rgba(6,15,30,0.95) 100%);
+}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(232,160,32,0.03) 1px, transparent 1px),
+    linear-gradient(90deg,rgba(232,160,32,0.03) 1px, transparent 1px);
+  background-size:80px 80px;
+  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 0%,transparent 100%);
+}
+.hero-content{position:relative;z-index:1;max-width:680px}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(232,160,32,0.1);
+  border:1px solid rgba(232,160,32,0.35);
+  border-radius:100px;padding:7px 18px;
+  font-size:10px;font-weight:800;letter-spacing:3px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:28px;
+  backdrop-filter:blur(10px);
+}
+.hero-eyebrow-dot{width:5px;height:5px;border-radius:50%;background:var(--green-l);animation:blink 1.5s infinite}
+.hero-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(56px,15vw,108px);
+  letter-spacing:2px;line-height:0.92;
+  margin-bottom:10px;
+}
+.hero-title em{
+  display:block;
+  background:linear-gradient(135deg,var(--gold-l) 0%,var(--gold) 40%,#D4860A 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  font-style:normal;
+  filter:drop-shadow(0 0 30px rgba(232,160,32,0.4));
+}
+.hero-sub{
+  font-size:15px;color:rgba(255,255,255,0.6);
+  line-height:1.8;max-width:480px;margin:20px auto 36px;
+  font-weight:400;letter-spacing:0.1px;
+}
+.hero-btns{display:flex;flex-direction:column;gap:12px;align-items:center}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:10px;
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);
+  color:var(--navy);padding:16px 40px;border-radius:10px;
+  font-size:14px;font-weight:900;text-decoration:none;letter-spacing:0.5px;
+  box-shadow:0 8px 32px rgba(232,160,32,0.4),0 0 0 0 rgba(232,160,32,0.3);
+  transition:transform 0.2s,box-shadow 0.2s;
+}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(232,160,32,0.55),0 0 0 4px rgba(232,160,32,0.1)}
+.btn-primary svg{width:18px;height:18px;fill:var(--navy)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1.5px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.7);
+  padding:14px 28px;border-radius:10px;font-size:13px;font-weight:600;text-decoration:none;
+  backdrop-filter:blur(8px);background:rgba(255,255,255,0.04);
+  transition:border-color 0.2s,color 0.2s,background 0.2s;
+}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);background:rgba(232,160,32,0.06)}
+
+/* ── STATS BAR ── */
+.stats-bar{
+  display:flex;justify-content:center;gap:0;
+  border-top:1px solid rgba(255,255,255,0.06);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  background:rgba(10,22,40,0.6);
+  backdrop-filter:blur(20px);
+}
+.stat-item{
+  flex:1;max-width:200px;
+  padding:24px 16px;text-align:center;
+  border-right:1px solid rgba(255,255,255,0.06);
+}
+.stat-item:last-child{border-right:none}
+.stat-num{
+  font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:1px;
+  color:var(--gold);line-height:1;margin-bottom:4px;
+}
+.stat-label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
+
+/* ── SECTION CHROME ── */
+.sec{padding:80px 24px}
+.sec-inner{max-width:640px;margin:0 auto}
+.sec-eyebrow{
+  font-size:9px;font-weight:900;letter-spacing:4px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:10px;text-align:center;
+  display:flex;align-items:center;justify-content:center;gap:12px;
+}
+.sec-eyebrow::before,.sec-eyebrow::after{
+  content:'';flex:1;max-width:40px;height:1px;background:linear-gradient(to right,transparent,var(--gold));
+}
+.sec-eyebrow::after{background:linear-gradient(to left,transparent,var(--gold))}
+.sec-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(36px,9vw,56px);
+  letter-spacing:2px;text-align:center;line-height:0.95;
+  margin-bottom:12px;
+}
+.sec-desc{font-size:13px;color:rgba(255,255,255,0.5);text-align:center;line-height:1.8;max-width:440px;margin:0 auto 36px}
+
+/* ── ETH LIVE BADGE ── */
+.eth-live-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(98,126,234,0.07);
+  border:1px solid rgba(98,126,234,0.2);
+  border-radius:10px;padding:10px 16px;
+  font-size:12px;margin-bottom:32px;
+  width:100%;max-width:640px;
+}
+.eth-live-badge .lbl{color:var(--gray)}
+.eth-live-badge .val{color:var(--eth);font-weight:800;font-size:14px}
+.eth-live-badge .time{color:var(--gray);font-size:10px;margin-left:auto}
+
+/* ── PACKAGE CARDS ── */
+.pkg-grid{display:flex;flex-direction:column;gap:14px;margin-bottom:32px}
+.pkg-card{
+  position:relative;overflow:hidden;cursor:pointer;
+  background:var(--navy-l);
+  border:1.5px solid rgba(255,255,255,0.07);
+  border-radius:var(--radius-lg);padding:22px 22px 22px 60px;
+  transition:border-color 0.25s,transform 0.2s,box-shadow 0.25s,background 0.25s;
+}
+.pkg-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(232,160,32,0.0) 0%,rgba(232,160,32,0.04) 100%);
+  opacity:0;transition:opacity 0.3s;
+}
+.pkg-card:hover{border-color:rgba(232,160,32,0.4);transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,0.3)}
+.pkg-card:hover::before{opacity:1}
+.pkg-card.sel{
+  border-color:var(--gold);
+  background:rgba(232,160,32,0.06);
+  box-shadow:0 0 0 1px rgba(232,160,32,0.15), var(--shadow-gold);
+}
+.pkg-card.sel::before{opacity:1}
+.pkg-popular{
+  position:absolute;top:16px;right:16px;
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);
+  color:var(--navy);font-size:9px;font-weight:900;
+  padding:4px 12px;border-radius:100px;letter-spacing:1.5px;text-transform:uppercase;
+}
+.pkg-check{
+  position:absolute;left:18px;top:50%;transform:translateY(-50%);
+  width:26px;height:26px;border-radius:50%;
+  border:2px solid rgba(255,255,255,0.15);
+  display:flex;align-items:center;justify-content:center;
+  transition:all 0.2s;background:rgba(255,255,255,0.03);
+  flex-shrink:0;
+}
+.pkg-card.sel .pkg-check,.pkg-check.checked{
+  background:var(--gold);border-color:var(--gold);
+  box-shadow:0 0 0 4px rgba(232,160,32,0.15);
+}
+.pkg-card.sel .pkg-check::after,.pkg-check.checked::after{
+  content:'✓';font-size:12px;font-weight:900;color:var(--navy);
+}
+.pkg-dur{font-size:10px;font-weight:800;letter-spacing:3px;color:var(--gold);margin-bottom:3px;text-transform:uppercase}
+.pkg-name{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1.5px;margin-bottom:6px;line-height:1}
+.pkg-pricing{display:flex;align-items:baseline;gap:8px;margin-bottom:3px}
+.pkg-usd{font-size:26px;font-weight:900;color:var(--gold)}
+.pkg-per{font-size:11px;color:var(--gray);font-weight:500}
+.pkg-eth-line{font-size:12px;color:var(--eth);font-weight:700;margin-bottom:10px}
+.pkg-features{display:flex;flex-direction:column;gap:4px}
+.pkg-feature{
+  font-size:11px;color:rgba(255,255,255,0.55);
+  display:flex;align-items:center;gap:8px;
+}
+.pkg-feature::before{content:'✓';color:var(--green);font-weight:900;font-size:10px;flex-shrink:0}
+
+/* ── PREVIEW SCREEN ── */
+.broadcast-preview{margin-bottom:32px}
+.preview-label{font-size:9px;font-weight:900;letter-spacing:3px;text-transform:uppercase;color:var(--gray);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.preview-label::after{content:'';flex:1;height:1px;background:rgba(255,255,255,0.06)}
+.preview-screen{
+  background:var(--navy-m);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:var(--radius-lg);overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.preview-header{
+  padding:10px 16px;
+  background:rgba(255,255,255,0.03);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.preview-header-dot{width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:6px;display:inline-block;animation:blink 2s infinite}
+.preview-header-title{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gray)}
+.preview-timer-badge{
+  font-size:10px;font-weight:900;color:var(--gold);
+  background:rgba(232,160,32,0.1);
+  border:1px solid rgba(232,160,32,0.25);
+  padding:3px 12px;border-radius:100px;letter-spacing:1.5px;
+}
+.preview-inner{
+  position:relative;height:190px;
+  background-image:url('images/img2.jpg');
+  background-size:cover;background-position:center;
+  display:flex;align-items:flex-end;overflow:hidden;
+}
+.preview-inner::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(6,15,30,0.95) 0%,rgba(6,15,30,0.15) 60%,transparent 100%);
+}
+.preview-ad-strip{position:relative;z-index:1;padding:18px 20px;width:100%}
+.preview-ad-brand{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(232,160,32,0.12);border:1px solid rgba(232,160,32,0.3);
+  border-radius:100px;padding:3px 10px;
+  font-size:9px;font-weight:900;letter-spacing:2px;color:var(--gold);
+  text-transform:uppercase;margin-bottom:6px;
+}
+.preview-ad-title{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;color:#fff;margin-bottom:3px}
+.preview-ad-desc{font-size:10px;color:rgba(255,255,255,0.6);font-weight:500}
+.preview-progress{height:3px;background:rgba(255,255,255,0.07)}
+.preview-progress-bar{height:100%;background:linear-gradient(90deg,var(--gold) 0%,var(--gold-l) 100%);transition:width 0.2s linear;width:0%;box-shadow:0 0 8px rgba(232,160,32,0.5)}
+
+/* ── MATCH CARDS ── */
+.match-list{display:flex;flex-direction:column;gap:10px}
+.match-card{
+  background:var(--navy-l);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:var(--radius);padding:14px 18px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:border-color 0.2s;
+}
+.match-card:hover{border-color:rgba(232,160,32,0.25)}
+.match-teams{font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:1px}
+.match-teams em{color:var(--gold);font-style:normal}
+.match-venue{font-size:10px;color:var(--gray);margin-top:2px}
+.match-meta{text-align:right}
+.match-date{font-size:13px;font-weight:800;color:rgba(255,255,255,0.9)}
+.match-time{font-size:11px;color:var(--gray)}
+.match-live-badge{
+  display:inline-flex;align-items:center;gap:5px;
+  background:rgba(212,43,35,0.12);border:1px solid rgba(212,43,35,0.3);
+  border-radius:100px;padding:2px 8px;font-size:9px;font-weight:900;
+  color:#F08080;text-transform:uppercase;letter-spacing:1px;margin-top:3px;
+}
+
+/* ── TROPHY SECTION ── */
+.trophy-wrap{position:relative;text-align:center;padding:0 0 60px}
+.trophy-img{
+  width:100%;max-width:400px;border-radius:24px;
+  display:block;margin:0 auto 28px;
+  box-shadow:0 30px 80px rgba(0,0,0,0.6),0 0 60px rgba(232,160,32,0.12);
+  border:1px solid rgba(232,160,32,0.15);
+}
+.trophy-caption{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.8;max-width:380px;margin:0 auto}
+
+/* ── ABOUT ── */
+.founder-card{
+  text-align:center;margin-bottom:32px;
+  padding:32px 24px;
+  background:var(--navy-l);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:var(--radius-lg);
+}
+.founder-avatar{
+  width:110px;height:110px;border-radius:50%;object-fit:cover;
+  border:3px solid var(--gold);
+  box-shadow:0 0 0 8px rgba(232,160,32,0.08),0 16px 40px rgba(0,0,0,0.4);
+  margin-bottom:16px;display:block;margin-left:auto;margin-right:auto;
+}
+.founder-name{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:3px;color:var(--gold);margin-bottom:3px}
+.founder-role{font-size:10px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--gray)}
+.about-text{font-size:13px;line-height:1.9;color:rgba(255,255,255,0.6);margin-bottom:16px}
+.about-text strong{color:var(--gold)}
+.metrics-row{display:flex;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:32px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.07)}
+.metric{text-align:center}
+.metric-num{font-family:'Bebas Neue',sans-serif;font-size:40px;color:var(--gold);line-height:1;margin-bottom:3px}
+.metric-lbl{font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
+
+/* ── FAQ ── */
+.faq-list{display:flex;flex-direction:column;gap:10px}
+.faq-item{
+  background:var(--navy-l);
+  border:1px solid rgba(255,255,255,0.07);
+  border-radius:var(--radius);padding:18px 22px;
+  transition:border-color 0.2s;
+}
+.faq-item:hover{border-color:rgba(232,160,32,0.2)}
+.faq-q{font-weight:800;font-size:14px;color:var(--gold);margin-bottom:8px}
+.faq-a{font-size:12px;color:rgba(255,255,255,0.6);line-height:1.8}
+
+/* ── TERMS ── */
+.terms-section h3{color:var(--gold);font-size:13px;font-weight:800;margin:24px 0 8px}
+.terms-section h3:first-child{margin-top:0}
+.terms-section p{font-size:12px;line-height:1.9;color:rgba(255,255,255,0.55)}
+.terms-section a{color:var(--gold);text-decoration:none}
+
+/* ── STEP PROGRESS ── */
+.prog-outer{padding:28px 24px 0}
+.prog-bar{display:flex;align-items:flex-start;max-width:640px;margin:0 auto}
+.prog-step{flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;position:relative}
+.prog-step:not(:last-child)::after{
+  content:'';position:absolute;top:13px;left:50%;width:100%;height:2px;
+  background:rgba(255,255,255,0.07);
+}
+.prog-step.done:not(:last-child)::after{background:var(--gold)}
+.prog-step.active:not(:last-child)::after{background:rgba(232,160,32,0.25)}
+.step-dot{
+  width:28px;height:28px;border-radius:50%;
+  border:2px solid rgba(255,255,255,0.1);
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:900;color:var(--gray);
+  background:var(--navy);position:relative;z-index:1;
+  transition:all 0.3s;
+}
+.prog-step.active .step-dot{border-color:var(--gold);color:var(--gold);box-shadow:0 0 0 4px rgba(232,160,32,0.1)}
+.prog-step.done .step-dot{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.step-lbl{font-size:9px;font-weight:800;letter-spacing:1px;color:var(--gray);text-transform:uppercase;text-align:center}
+.prog-step.active .step-lbl{color:var(--gold)}
+.prog-step.done .step-lbl{color:rgba(255,255,255,0.6)}
+
+/* ── FORM PANELS ── */
+.form-outer{padding:0 24px 80px;max-width:688px;margin:0 auto}
+.step-panel{display:none}
+.step-panel.active{display:block}
+.panel-title{font-family:'Bebas Neue',sans-serif;font-size:34px;letter-spacing:2px;margin:28px 0 5px}
+.panel-desc{font-size:13px;color:var(--gray-l);margin-bottom:28px;line-height:1.7}
+
+/* ── FIELDS ── */
+.field{margin-bottom:20px}
+.field-lbl{display:block;font-size:10px;font-weight:800;letter-spacing:1.5px;color:rgba(255,255,255,0.5);margin-bottom:8px;text-transform:uppercase}
+.field-inp{
+  width:100%;
+  background:rgba(255,255,255,0.04);
+  border:1.5px solid rgba(255,255,255,0.1);
+  border-radius:10px;padding:13px 16px;
+  font-size:14px;color:var(--white);font-family:'Inter',sans-serif;
+  -webkit-appearance:none;transition:border-color 0.2s,box-shadow 0.2s;
+}
+.field-inp:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(232,160,32,0.08)}
+.field-inp::placeholder{color:rgba(255,255,255,0.18)}
+.field-inp.err{border-color:var(--red);animation:shake 0.3s ease}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+select.field-inp{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238A97AE' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;
+  padding-right:36px;background-color:rgba(255,255,255,0.04);
+}
+select.field-inp option{background:#0A1628}
+textarea.field-inp{resize:vertical;min-height:84px;line-height:1.6}
+.field-hint{font-size:11px;color:var(--gray);margin-top:6px;line-height:1.6}
+
+/* ── BUTTONS ── */
+.btn-gold{
+  display:block;width:100%;
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);
+  color:var(--navy);border:none;border-radius:10px;padding:16px;
+  font-size:15px;font-weight:900;cursor:pointer;
+  font-family:'Inter',sans-serif;letter-spacing:0.3px;
+  box-shadow:0 6px 24px rgba(232,160,32,0.35);
+  transition:transform 0.15s,box-shadow 0.15s;text-align:center;
+}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(232,160,32,0.5)}
+.btn-gold:disabled{opacity:0.4;cursor:not-allowed;transform:none;box-shadow:none}
+.btn-eth{
+  display:block;width:100%;
+  background:linear-gradient(135deg,var(--eth) 0%,var(--eth-l) 100%);
+  color:var(--white);border:none;border-radius:10px;padding:16px;
+  font-size:15px;font-weight:900;cursor:pointer;font-family:'Inter',sans-serif;
+  box-shadow:0 6px 24px rgba(98,126,234,0.35);
+  transition:transform 0.15s,box-shadow 0.15s;text-align:center;
+}
+.btn-eth:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(98,126,234,0.5)}
+.btn-eth:disabled{opacity:0.4;cursor:not-allowed;transform:none;box-shadow:none}
+.btn-outline{
+  display:block;width:100%;background:transparent;
+  color:rgba(255,255,255,0.45);
+  border:1.5px solid rgba(255,255,255,0.09);
+  border-radius:10px;padding:13px;
+  font-size:13px;font-weight:700;cursor:pointer;
+  font-family:'Inter',sans-serif;margin-top:10px;
+  transition:border-color 0.2s,color 0.2s;text-align:center;
+}
+.btn-outline:hover{border-color:rgba(255,255,255,0.25);color:var(--white)}
+
+/* ── ORDER SUMMARY ── */
+.order-box{
+  background:rgba(232,160,32,0.04);
+  border:1.5px solid rgba(232,160,32,0.18);
+  border-radius:var(--radius-lg);padding:20px;margin-bottom:22px;
+}
+.order-title{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;color:var(--gold);margin-bottom:16px}
+.order-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:12px}
+.order-row:last-of-type{border-bottom:none}
+.order-row .lbl{color:var(--gray)}
+.order-row .val{font-weight:700;text-align:right;max-width:58%;color:rgba(255,255,255,0.9)}
+.order-total{margin-top:14px;padding-top:14px;border-top:2px solid rgba(232,160,32,0.2);display:flex;justify-content:space-between;align-items:flex-end}
+.order-usd{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--gold);line-height:1}
+.order-eth{font-size:13px;color:var(--eth);font-weight:800;margin-top:3px}
+
+/* ── PAY TABS ── */
+.pay-tabs{display:flex;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.09);margin-bottom:20px}
+.pay-tab{
+  flex:1;padding:13px;text-align:center;
+  font-size:12px;font-weight:800;cursor:pointer;
+  background:rgba(255,255,255,0.03);color:var(--gray);
+  border:none;font-family:'Inter',sans-serif;
+  transition:background 0.2s,color 0.2s;letter-spacing:0.3px;
+}
+.pay-tab:first-child{border-right:1px solid rgba(255,255,255,0.09)}
+.pay-tab.active{background:var(--eth);color:var(--white)}
+
+/* ── METAMASK & MANUAL PANELS ── */
+.mm-panel,.manual-panel{display:none}
+.mm-panel.active,.manual-panel.active{display:block}
+.mm-card{
+  background:rgba(98,126,234,0.06);
+  border:1px solid rgba(98,126,234,0.2);
+  border-radius:var(--radius-lg);padding:22px;margin-bottom:16px;
+}
+.mm-amount-row{
+  background:rgba(255,255,255,0.04);border-radius:8px;
+  padding:13px 16px;margin:16px 0;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.mm-amount-row .lbl{font-size:11px;color:var(--gray)}
+.mm-amount-row .val{font-size:20px;font-weight:900;color:var(--eth)}
+.status-box{border-radius:8px;padding:12px 14px;margin-bottom:12px;font-size:12px;display:none;line-height:1.6}
+.status-box.show{display:block}
+.status-box.pending{background:rgba(232,160,32,0.08);border:1px solid rgba(232,160,32,0.25);color:var(--gold)}
+.status-box.success{background:rgba(18,161,85,0.1);border:1px solid rgba(18,161,85,0.35);color:var(--green-l)}
+.status-box.error{background:rgba(212,43,35,0.08);border:1px solid rgba(212,43,35,0.25);color:#F08080}
+.net-badge{
+  display:inline-flex;align-items:center;gap:7px;
+  background:rgba(98,126,234,0.08);border:1px solid rgba(98,126,234,0.22);
+  border-radius:100px;padding:5px 14px;font-size:11px;color:var(--eth);font-weight:800;
+  margin-bottom:16px;letter-spacing:0.5px;
+}
+.net-dot{width:6px;height:6px;border-radius:50%;background:var(--green-l);animation:blink 1.5s infinite}
+.wallet-wrap{
+  background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.09);
+  border-radius:12px;padding:18px;margin-bottom:14px;
+}
+.wallet-addr{
+  font-family:monospace;font-size:11px;word-break:break-all;
+  color:rgba(255,255,255,0.7);background:rgba(0,0,0,0.25);
+  padding:10px 12px;border-radius:7px;margin:10px 0;line-height:1.5;
+}
+.copy-btn{
+  display:block;width:100%;background:transparent;
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:7px;padding:9px;font-size:12px;color:var(--gray);
+  cursor:pointer;font-family:'Inter',sans-serif;
+  transition:border-color 0.2s,color 0.2s;text-align:center;
+}
+.copy-btn:hover{border-color:var(--gold);color:var(--gold)}
+.exact-badge{
+  background:rgba(98,126,234,0.06);
+  border:1px solid rgba(98,126,234,0.18);
+  border-radius:10px;padding:14px 16px;margin-bottom:14px;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.exact-badge .lbl{font-size:11px;color:var(--gray)}
+.exact-badge .val{font-size:18px;font-weight:900;color:var(--eth)}
+.exact-badge .usd{font-size:10px;color:var(--gray);margin-top:3px}
+.qr-wrap{text-align:center;margin:16px 0}
+.qr-lbl{font-size:10px;color:var(--gray);margin-top:8px;letter-spacing:0.5px}
+.fraud-warning{
+  background:rgba(212,43,35,0.07);
+  border:1px solid rgba(212,43,35,0.25);
+  border-radius:10px;padding:13px 16px;margin-bottom:14px;
+  font-size:11px;color:rgba(255,200,200,0.8);line-height:1.7;
+}
+.fraud-warning strong{color:#F08080}
+
+/* ── WATCHER ── */
+#watcherPanel{display:none}
+.watcher-card{
+  background:rgba(98,126,234,0.06);
+  border:1.5px solid rgba(98,126,234,0.25);
+  border-radius:var(--radius-lg);padding:24px;text-align:center;
+}
+.watcher-icon{font-size:32px;margin-bottom:12px}
+.watcher-title{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;color:var(--eth);margin-bottom:8px}
+.watcher-desc{font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7;margin-bottom:20px}
+.radar-wrap{position:relative;width:80px;height:80px;margin:0 auto 18px}
+.radar-ring{
+  position:absolute;inset:0;border-radius:50%;
+  border:2px solid var(--eth);opacity:0;
+  animation:radarPulse 2.2s ease-out infinite;
+}
+.radar-ring:nth-child(2){animation-delay:0.75s}
+.radar-core{
+  position:absolute;inset:18px;border-radius:50%;
+  background:rgba(98,126,234,0.12);
+  border:2px solid rgba(98,126,234,0.45);
+  display:flex;align-items:center;justify-content:center;font-size:20px;
+}
+@keyframes radarPulse{0%{transform:scale(0.5);opacity:0.8}100%{transform:scale(2.5);opacity:0}}
+.watcher-pulse-row{display:flex;align-items:center;justify-content:center;gap:8px;font-size:12px;color:var(--gray);margin-bottom:16px}
+.live-dot{width:6px;height:6px;border-radius:50%;background:var(--green-l);animation:blink 1.2s infinite;flex-shrink:0}
+.watcher-amount-row{
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);
+  border-radius:8px;padding:12px 16px;
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:12px;
+}
+#watcherWarning{display:none;margin-top:12px;background:rgba(212,43,35,0.1);border:1px solid rgba(212,43,35,0.3);border-radius:8px;padding:10px 14px;font-size:11px;color:#F08080;line-height:1.6;text-align:left}
+
+/* ── SUCCESS ── */
+.success-panel{display:none;padding:40px 24px 80px;text-align:center;max-width:640px;margin:0 auto}
+.success-panel.active{display:block}
+.success-icon-wrap{
+  width:96px;height:96px;border-radius:50%;
+  background:rgba(18,161,85,0.1);border:2px solid var(--green-l);
+  display:flex;align-items:center;justify-content:center;
+  font-size:44px;margin:0 auto 24px;
+  animation:popIn 0.6s cubic-bezier(0.34,1.56,0.64,1);
+  box-shadow:0 0 40px rgba(74,222,128,0.15);
+}
+@keyframes popIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+.success-title{font-family:'Bebas Neue',sans-serif;font-size:50px;letter-spacing:3px;color:var(--gold);margin-bottom:10px}
+.success-subtitle{font-size:18px;font-weight:800;margin-bottom:10px}
+.success-desc{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.8;margin-bottom:28px}
+.ref-card{
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);
+  border-radius:12px;padding:16px;margin-bottom:12px;text-align:left;
+}
+.ref-lbl{font-size:9px;font-weight:900;letter-spacing:3px;text-transform:uppercase;color:var(--gray);margin-bottom:6px}
+.ref-val{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--gold);letter-spacing:2px;word-break:break-all}
+.tx-link{font-size:11px;color:var(--eth);text-decoration:none;display:block;margin-top:5px}
+.tx-link:hover{text-decoration:underline}
+.countdown-card{
+  background:linear-gradient(135deg,rgba(232,160,32,0.1) 0%,rgba(6,15,30,0.2) 100%);
+  border:1.5px solid rgba(232,160,32,0.3);
+  border-radius:var(--radius-lg);padding:22px;margin-bottom:22px;text-align:center;
+}
+.cd-eyebrow{font-size:9px;font-weight:900;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.cd-match{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1px;margin-bottom:4px}
+.cd-venue{font-size:11px;color:var(--gray);margin-bottom:18px}
+.cd-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+.cd-unit{background:var(--navy-m);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:10px 4px}
+.cd-num{font-family:'Bebas Neue',sans-serif;font-size:34px;color:var(--gold);line-height:1;display:block}
+.cd-label{font-size:9px;color:var(--gray);font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+.cd-note{font-size:11px;color:rgba(255,255,255,0.5);line-height:1.7;background:rgba(255,255,255,0.03);border-radius:8px;padding:10px 14px}
+.cd-note strong{color:var(--gold)}
+.next-steps{
+  background:rgba(232,160,32,0.04);border:1px solid rgba(232,160,32,0.15);
+  border-radius:var(--radius);padding:18px;margin-bottom:24px;text-align:left;
+}
+.next-step-title{font-size:9px;font-weight:900;color:var(--gold);text-transform:uppercase;letter-spacing:2.5px;margin-bottom:12px}
+.next-step-item{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
+.next-step-item:last-child{margin-bottom:0}
+.step-num{width:22px;height:22px;border-radius:50%;background:var(--gold);color:var(--navy);font-size:10px;font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.step-text{font-size:12px;color:rgba(255,255,255,0.6);line-height:1.6}
+
+/* ── SPIN ── */
+.spin{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,0.25);border-top-color:var(--white);border-radius:50%;animation:sp 0.7s linear infinite;vertical-align:-3px;margin-right:8px}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* ── FOOTER ── */
+footer{
+  padding:40px 24px;text-align:center;
+  border-top:1px solid rgba(255,255,255,0.06);
+  font-size:12px;color:var(--gray);line-height:1.9;
+  background:rgba(6,15,30,0.8);
+}
+footer a{color:var(--gray);text-decoration:none;transition:color 0.2s}
+footer a:hover{color:var(--gold)}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:4px;color:var(--gold);margin-bottom:8px}
+.footer-social a{
+  display:inline-flex;align-items:center;gap:6px;
+  border:1px solid rgba(255,255,255,0.1);border-radius:100px;padding:7px 18px;
+  font-size:11px;font-weight:700;color:var(--gray);text-decoration:none;
+  transition:border-color 0.2s,color 0.2s;
+}
+.footer-social a:hover{border-color:var(--gold);color:var(--gold)}
+.footer-divider{width:40px;height:1px;background:rgba(255,255,255,0.08);margin:20px auto}
+
+/* ── DIVIDER ORNAMENT ── */
+.ornament-divider{
+  display:flex;align-items:center;justify-content:center;
+  gap:16px;padding:0 24px;margin:16px 0;
+  color:rgba(232,160,32,0.25);font-size:16px;
+}
+.ornament-divider::before,.ornament-divider::after{
+  content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(232,160,32,0.15));
+}
+.ornament-divider::after{background:linear-gradient(to left,transparent,rgba(232,160,32,0.15))}
+
+/* ── TRUST STRIP ── */
+.trust-strip{
+  padding:28px 24px;
+  background:rgba(10,22,40,0.5);
+  border-top:1px solid rgba(255,255,255,0.05);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+}
+.trust-inner{max-width:640px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:16px}
+.trust-label{font-size:9px;font-weight:900;letter-spacing:3px;text-transform:uppercase;color:var(--gray)}
+.trust-items{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.trust-item{
+  display:flex;align-items:center;gap:8px;
+  background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);
+  border-radius:100px;padding:8px 16px;
+  font-size:11px;font-weight:700;color:rgba(255,255,255,0.6);
+  transition:border-color 0.2s,color 0.2s;
+}
+.trust-item:hover{border-color:rgba(232,160,32,0.3);color:var(--gold)}
+.trust-icon{font-size:14px;line-height:1}
+
+/* ── BROADCAST NUMBERS STRIP ── */
+.broadcast-strip{
+  background:linear-gradient(135deg,rgba(232,160,32,0.06) 0%,rgba(10,22,40,0) 100%);
+  border:1px solid rgba(232,160,32,0.12);
+  border-radius:var(--radius-lg);padding:22px 24px;
+  display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;
+  margin-bottom:32px;
+}
+.broadcast-item{text-align:center;flex:1;min-width:80px}
+.broadcast-num{font-family:'Bebas Neue',sans-serif;font-size:30px;color:var(--gold);line-height:1;margin-bottom:3px}
+.broadcast-lbl{font-size:9px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray)}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 0.65s ease,transform 0.65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:0.08s}
+.reveal-delay-2{transition-delay:0.16s}
+.reveal-delay-3{transition-delay:0.24s}
+.reveal-delay-4{transition-delay:0.32s}
+.reveal-left{opacity:0;transform:translateX(-24px);transition:opacity 0.6s ease,transform 0.6s ease}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-scale{opacity:0;transform:scale(0.95);transition:opacity 0.55s ease,transform 0.55s ease}
+.reveal-scale.visible{opacity:1;transform:scale(1)}
+
+/* ── HOVER GLOW ON STAT ITEMS ── */
+.stat-item{cursor:default;transition:background 0.25s}
+.stat-item:hover{background:rgba(232,160,32,0.04)}
+.stat-num{transition:color 0.3s,text-shadow 0.3s}
+.stat-item:hover .stat-num{color:var(--gold-l);text-shadow:0 0 24px rgba(232,160,32,0.45)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:640px){
+  .hero-title{font-size:clamp(50px,15vw,80px)!important}
+  .hero-sub{font-size:14px}
+  .stats-bar{flex-wrap:wrap}
+  .stat-item{flex:1 1 45%;border-bottom:1px solid rgba(255,255,255,0.05)}
+  .sec{padding:60px 16px}
+  .form-outer{padding:0 16px 60px}
+  .prog-outer{padding:24px 16px 0}
+  .pkg-card{padding:18px 18px 18px 52px}
+  .pkg-check{left:14px}
+  .metrics-row{gap:16px}
+  .metric-num{font-size:34px}
+  .faq-item{padding:15px 17px}
+  .order-box{padding:16px}
+  .mm-card{padding:18px}
+  .cd-grid{gap:6px}
+  .cd-num{font-size:28px}
+  footer{padding:32px 16px}
+  .trust-items{gap:8px}
+  .trust-item{padding:7px 12px;font-size:10px}
+  .broadcast-strip{gap:10px}
+  .broadcast-num{font-size:24px}
+}
+@media(max-width:400px){
+  .hero-title{font-size:clamp(42px,17vw,64px)!important}
+  .btn-primary{padding:14px 28px;font-size:13px}
+  .success-title{font-size:38px}
+  .sec-title{font-size:clamp(32px,10vw,44px)!important}
+}
+
+/* ── WHY CARD HOVER ── */
+.why-card:hover{
+  border-color:rgba(232,160,32,0.3)!important;
+  transform:translateY(-2px);
+  box-shadow:0 8px 28px rgba(0,0,0,0.25);
+}
+
+/* ── TERMS REVEAL ── */
+.terms-section{animation:none}
+.terms-section h3,.terms-section p{transition:color 0.2s}
+
+/* ── FLOATING MOBILE CTA ── */
+@media(max-width:640px){
+  #floatCTA{display:block!important}
+}
+
+/* ── PAGE LOAD FADE IN ── */
+body{animation:bodyFade 0.5s ease both}
+@keyframes bodyFade{from{opacity:0}to{opacity:1}}
+
+/* ── LINK UNDERLINE ANIMATION ── */
+footer a{position:relative}
+footer a::after{content:'';position:absolute;bottom:-1px;left:0;width:0;height:1px;background:var(--gold);transition:width 0.25s ease}
+footer a:hover::after{width:100%}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-logo">WC<span>2026</span> ADS</div>
+  <div class="nav-links">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <a href="#packages" class="nav-link">Packages</a>
+    <a href="#book" class="nav-cta">Book Now</a>
+  </div>
+</nav>
+
+<!-- ── MATCH TICKER ── -->
+<div class="ticker-wrap">
+  <div class="ticker-inner" id="tickerInner">
+    <span><div class="ticker-dot-live"></div>LIVE NOW: Mexico vs South Africa · Jun 11 · Opening Match</span>
+    <span>⚽ Jun 12: USA vs Paraguay · Canada vs Bosnia &nbsp;·&nbsp; Jun 13: Brazil vs Morocco</span>
+    <span>⚽ Jun 15: Spain vs Cape Verde · Saudi Arabia vs Uruguay · Belgium vs Egypt</span>
+    <span>⚽ Jun 17: England vs Croatia · Germany vs Ecuador · Jun 18: Mexico vs South Korea</span>
+    <span>🏆 World Cup 2026 · 48 Teams · 104 Matches · USA, Canada, Mexico · Jun 11 – Jul 19</span>
+    <span><div class="ticker-dot-live"></div>LIVE NOW: Mexico vs South Africa · Jun 11 · Opening Match</span>
+    <span>⚽ Jun 12: USA vs Paraguay · Canada vs Bosnia &nbsp;·&nbsp; Jun 13: Brazil vs Morocco</span>
+    <span>⚽ Jun 15: Spain vs Cape Verde · Saudi Arabia vs Uruguay · Belgium vs Egypt</span>
+    <span>⚽ Jun 17: England vs Croatia · Germany vs Ecuador · Jun 18: Mexico vs South Korea</span>
+    <span>🏆 World Cup 2026 · 48 Teams · 104 Matches · USA, Canada, Mexico · Jun 11 – Jul 19</span>
+  </div>
+</div>
+
+<!-- ── HERO ── -->
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-dot"></div>
+      FIFA World Cup 2026 · Official Ad Platform
+    </div>
+    <h1 class="hero-title">
+      REACH THE<br>
+      <em>WORLD</em><br>
+      THIS SUMMER
+    </h1>
+    <p class="hero-sub">Book your video ad slot during the biggest sporting event on Earth. 15 to 60 seconds — confirmed via on-chain Ethereum payment. Your ad airs the day after the next match day.</p>
+    <div class="hero-btns">
+      <a href="#book" class="btn-primary">
+        Book Your Ad Slot
+        <svg viewBox="0 0 24 24"><path d="M13 5l7 7-7 7M5 12h15"/></svg>
+      </a>
+      <a href="#packages" class="btn-ghost">View Pricing & Packages</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── STATS BAR ── -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">5B+</div>
+    <div class="stat-label">Global Viewers</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">200+</div>
+    <div class="stat-label">Countries</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">104</div>
+    <div class="stat-label">Match Days</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">48</div>
+    <div class="stat-label">Teams</div>
+  </div>
+</div>
+
+<!-- ── TRUST STRIP ── -->
+<div class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-label">Trusted by brands in 200+ countries</div>
+    <div class="trust-items">
+      <div class="trust-item"><span class="trust-icon">⛓️</span>On-Chain ETH Payment</div>
+      <div class="trust-item"><span class="trust-icon">🔍</span>Etherscan Verified</div>
+      <div class="trust-item"><span class="trust-icon">📺</span>Broadcast-Grade Quality</div>
+      <div class="trust-item"><span class="trust-icon">🌍</span>5B+ Global Viewers</div>
+      <div class="trust-item"><span class="trust-icon">⚡</span>Instant Confirmation</div>
+      <div class="trust-item"><span class="trust-icon">🔒</span>Fraud-Proof System</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── PACKAGES ── -->
+<div class="sec" id="packages">
+  <div class="sec-inner">
+    <div class="sec-eyebrow reveal">Ad Packages</div>
+    <h2 class="sec-title reveal reveal-delay-1">CHOOSE YOUR<br>AIRTIME</h2>
+    <p class="sec-desc reveal">Broadcast-grade World Cup pricing. Every slot is confirmed on-chain via Ethereum.</p>
+
+    <div class="broadcast-strip reveal reveal-delay-1">
+      <div class="broadcast-item"><div class="broadcast-num">5B+</div><div class="broadcast-lbl">Viewers</div></div>
+      <div class="broadcast-item"><div class="broadcast-num">200+</div><div class="broadcast-lbl">Countries</div></div>
+      <div class="broadcast-item"><div class="broadcast-num">104</div><div class="broadcast-lbl">Matches</div></div>
+      <div class="broadcast-item"><div class="broadcast-num">39</div><div class="broadcast-lbl">Days Live</div></div>
+    </div>
+
+    <div class="eth-live-badge reveal reveal-delay-2" style="max-width:100%">
+      <div class="live-dot"></div>
+      <span class="lbl">ETH / USD live</span>
+      <span class="val" id="heroEthPrice">Loading…</span>
+      <span class="time" id="heroEthTime"></span>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:16px">
+
+      <div style="background:var(--navy-l);border:1.5px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:22px;position:relative;overflow:hidden">
+        <div style="font-size:10px;font-weight:900;letter-spacing:3px;color:var(--gold);margin-bottom:4px;text-transform:uppercase">15 Seconds</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1.5px;margin-bottom:8px">Kickoff Spot</div>
+        <div style="font-size:26px;font-weight:900;color:var(--gold)">$2,500 <span style="font-size:12px;font-weight:500;color:var(--gray)">per broadcast</span></div>
+        <div style="font-size:12px;color:var(--eth);font-weight:800;margin:4px 0 12px" id="prev-eth-15">≈ loading ETH</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7">Perfect for brand recall. 15-second impact spot aired across all match-day streams.</div>
+      </div>
+
+      <div style="background:var(--navy-l);border:1.5px solid rgba(232,160,32,0.35);border-radius:var(--radius-lg);padding:22px;position:relative;overflow:hidden;box-shadow:var(--shadow-gold)">
+        <div style="position:absolute;top:16px;right:16px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);color:var(--navy);font-size:9px;font-weight:900;padding:4px 12px;border-radius:100px;letter-spacing:1.5px">POPULAR</div>
+        <div style="font-size:10px;font-weight:900;letter-spacing:3px;color:var(--gold);margin-bottom:4px;text-transform:uppercase">30 Seconds</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1.5px;margin-bottom:8px">Champion Cut</div>
+        <div style="font-size:26px;font-weight:900;color:var(--gold)">$5,500 <span style="font-size:12px;font-weight:500;color:var(--gray)">per broadcast</span></div>
+        <div style="font-size:12px;color:var(--eth);font-weight:800;margin:4px 0 12px" id="prev-eth-30">≈ loading ETH</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7">Industry standard. Full story, call to action. Most-booked slot for brand campaigns.</div>
+      </div>
+
+      <div style="background:var(--navy-l);border:1.5px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:22px">
+        <div style="font-size:10px;font-weight:900;letter-spacing:3px;color:var(--gold);margin-bottom:4px;text-transform:uppercase">45 Seconds</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1.5px;margin-bottom:8px">Stadium Slot</div>
+        <div style="font-size:26px;font-weight:900;color:var(--gold)">$8,500 <span style="font-size:12px;font-weight:500;color:var(--gray)">per broadcast</span></div>
+        <div style="font-size:12px;color:var(--eth);font-weight:800;margin:4px 0 12px" id="prev-eth-45">≈ loading ETH</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7">Extended storytelling. Ideal for product launches, testimonials and complex brand messages.</div>
+      </div>
+
+      <div style="background:linear-gradient(135deg,rgba(232,160,32,0.09),rgba(10,22,40,0.5));border:1.5px solid rgba(232,160,32,0.38);border-radius:var(--radius-lg);padding:22px;box-shadow:0 0 50px rgba(232,160,32,0.08)">
+        <div style="font-size:10px;font-weight:900;letter-spacing:3px;color:var(--gold);margin-bottom:4px;text-transform:uppercase">60 Seconds</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1.5px;margin-bottom:8px">Trophy Takeover</div>
+        <div style="font-size:26px;font-weight:900;color:var(--gold)">$12,000 <span style="font-size:12px;font-weight:500;color:var(--gray)">per broadcast</span></div>
+        <div style="font-size:12px;color:var(--eth);font-weight:800;margin:4px 0 12px" id="prev-eth-60">≈ loading ETH</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.5);line-height:1.7">Full cinematic minute. Maximum brand dominance. Limited slots — premium position guaranteed.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ── MATCH DAYS ── -->
+<div class="sec" style="padding-top:0">
+  <div class="sec-inner">
+    <div class="sec-eyebrow reveal">Next Match Days</div>
+    <h2 class="sec-title reveal reveal-delay-1">BOOK. PAY.<br>YOUR AD AIRS</h2>
+    <p class="sec-desc reveal reveal-delay-2">Payment confirmed on-chain → ad airs the day after the next match day.</p>
+
+    <div class="match-list">
+      <div class="match-card reveal">
+        <div>
+          <div class="match-teams">USA <em>vs</em> Paraguay</div>
+          <div class="match-venue">Group D · SoFi Stadium, LA</div>
+        </div>
+        <div class="match-meta"><div class="match-date">Jun 12</div><div class="match-time">9 PM ET</div></div>
+      </div>
+      <div class="match-card reveal reveal-delay-1">
+        <div>
+          <div class="match-teams">Canada <em>vs</em> Bosnia</div>
+          <div class="match-venue">Group B · BMO Field, Toronto</div>
+        </div>
+        <div class="match-meta"><div class="match-date">Jun 12</div><div class="match-time">3 PM ET</div></div>
+      </div>
+      <div class="match-card reveal reveal-delay-2">
+        <div>
+          <div class="match-teams">Brazil <em>vs</em> Morocco</div>
+          <div class="match-venue">Group C · MetLife Stadium, NJ</div>
+        </div>
+        <div class="match-meta"><div class="match-date">Jun 13</div><div class="match-time">6 PM ET</div></div>
+      </div>
+      <div class="match-card reveal reveal-delay-3">
+        <div>
+          <div class="match-teams">Spain <em>vs</em> Cape Verde</div>
+          <div class="match-venue">Group H · Atlanta</div>
+        </div>
+        <div class="match-meta"><div class="match-date">Jun 15</div><div class="match-time">1 PM ET</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── TROPHY ── -->
+<div class="sec" style="padding-top:0">
+  <div class="sec-inner">
+    <div class="trophy-wrap">
+      <img src="images/img3.jpg" alt="FIFA World Cup 2026 Trophy" class="trophy-img reveal-scale">
+      <p class="trophy-caption reveal reveal-delay-1">Your brand alongside the FIFA World Cup 2026 trophy. The most watched tournament in history — 5+ billion viewers across 200+ countries.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── WHY BOOK ── -->
+<div class="sec" style="padding-top:0;padding-bottom:0">
+  <div class="sec-inner">
+    <div class="sec-eyebrow reveal">Why Book With Us</div>
+    <h2 class="sec-title reveal reveal-delay-1">THE WORLD<br>IS WATCHING</h2>
+    <p class="sec-desc reveal reveal-delay-2">No other event delivers this scale. Your ad runs during the most-watched broadcast window of 2026.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:40px">
+      <div class="why-card reveal" style="background:var(--navy-l);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:20px">
+        <div style="font-size:28px;margin-bottom:10px">📡</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1.5px;margin-bottom:6px;color:var(--gold)">Global Reach</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);line-height:1.7">Broadcast across 200+ countries and territories simultaneously.</div>
+      </div>
+      <div class="why-card reveal reveal-delay-1" style="background:var(--navy-l);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:20px">
+        <div style="font-size:28px;margin-bottom:10px">⛓️</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1.5px;margin-bottom:6px;color:var(--gold)">On-Chain Trust</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);line-height:1.7">Every booking confirmed immutably on the Ethereum blockchain.</div>
+      </div>
+      <div class="why-card reveal reveal-delay-2" style="background:var(--navy-l);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:20px">
+        <div style="font-size:28px;margin-bottom:10px">⚡</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1.5px;margin-bottom:6px;color:var(--gold)">Instant Setup</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);line-height:1.7">Book, pay, submit creative — your ad is live the next match day.</div>
+      </div>
+      <div class="why-card reveal reveal-delay-3" style="background:var(--navy-l);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:20px">
+        <div style="font-size:28px;margin-bottom:10px">🎯</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1.5px;margin-bottom:6px;color:var(--gold)">Peak Audience</div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.5);line-height:1.7">Captive, engaged viewers at peak attention — no skipping, no scrolling.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MID-PAGE CTA BANNER ── -->
+<div style="padding:0 24px 40px">
+  <div style="max-width:640px;margin:0 auto">
+    <div class="reveal" style="background:linear-gradient(135deg,rgba(232,160,32,0.12) 0%,rgba(10,22,40,0.6) 100%);border:1.5px solid rgba(232,160,32,0.3);border-radius:20px;padding:32px 28px;text-align:center;position:relative;overflow:hidden">
+      <div style="position:absolute;top:-40px;right:-40px;width:180px;height:180px;background:radial-gradient(circle,rgba(232,160,32,0.08) 0%,transparent 70%);pointer-events:none"></div>
+      <div style="font-size:9px;font-weight:900;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Limited Slots Available</div>
+      <div style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,7vw,40px);letter-spacing:2px;line-height:1.05;margin-bottom:12px">SLOTS ARE FILLING<br>FAST THIS SEASON</div>
+      <p style="font-size:13px;color:rgba(255,255,255,0.5);line-height:1.7;margin-bottom:22px;max-width:360px;margin-left:auto;margin-right:auto">With 104 match days and thousands of brands competing for airtime, early bookings secure the best positions. Don't miss your window.</p>
+      <a href="#book" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);color:var(--navy);padding:14px 34px;border-radius:10px;font-size:14px;font-weight:900;text-decoration:none;box-shadow:0 6px 24px rgba(232,160,32,0.4);letter-spacing:0.3px">
+        Secure My Slot Now →
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
+<div class="sec" id="about">
+  <div class="sec-inner">
+    <div class="sec-eyebrow reveal">About Us</div>
+    <h2 class="sec-title reveal reveal-delay-1">WHO WE ARE</h2>
+
+    <div class="founder-card reveal reveal-delay-2">
+      <img src="images/img4.jpg" alt="Romy Gai, Founder" class="founder-avatar">
+      <div class="founder-name">Romy Gai</div>
+      <div class="founder-role">Founder &amp; Managing Director</div>
+    </div>
+
+    <p class="about-text reveal">Imagine having access to billions of people across every continent. We create world-class marketing strategies that connect brands with massive global audiences, build lasting engagement, and drive measurable business growth.</p>
+    <p class="about-text reveal reveal-delay-1">Owned and managed by <strong>Romy Gai</strong>, who has overseen commercial partnerships and marketing initiatives reaching billions of football fans worldwide, we combine creativity, data, and strategic partnerships to turn brands into global success stories.</p>
+    <p class="about-text reveal reveal-delay-2" style="margin-bottom:0">Our achievements are measured not only by impressions and reach, but by the lasting value and growth we create for our clients.</p>
+
+    <div class="metrics-row reveal reveal-delay-3">
+      <div class="metric"><div class="metric-num">10+</div><div class="metric-lbl">Years Experience</div></div>
+      <div class="metric"><div class="metric-num">5B+</div><div class="metric-lbl">Fans Reached</div></div>
+      <div class="metric"><div class="metric-num">200+</div><div class="metric-lbl">Countries</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FAQ ── -->
+<div class="sec" id="faq">
+  <div class="sec-inner">
+    <div class="sec-eyebrow reveal">FAQ</div>
+    <h2 class="sec-title reveal reveal-delay-1">QUESTIONS?<br>ANSWERED</h2>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q">What ad formats do you accept?</div>
+        <div class="faq-a">We accept high-quality JPEG images and high-quality video files (MP4 or MOV recommended). Our team will confirm exact specs for your booked slot duration after payment is received.</div>
+      </div>
+      <div class="faq-item reveal reveal-delay-1">
+        <div class="faq-q">When will my ad air?</div>
+        <div class="faq-a">Your ad airs the day after the next scheduled World Cup 2026 match day, once your on-chain payment is confirmed and your creative has been received and approved.</div>
+      </div>
+      <div class="faq-item reveal reveal-delay-2">
+        <div class="faq-q">How do I pay?</div>
+        <div class="faq-a">Payment is made via Ethereum (ETH) on the Ethereum Mainnet, either through MetaMask or by sending ETH manually to the address provided. We confirm payment automatically once it's detected on-chain.</div>
+      </div>
+      <div class="faq-item reveal reveal-delay-3">
+        <div class="faq-q">What if a match is postponed or cancelled?</div>
+        <div class="faq-a">If the match day associated with your booking is postponed, your ad will automatically be rescheduled to the day after the next available match day at no extra cost.</div>
+      </div>
+      <div class="faq-item reveal reveal-delay-4">
+        <div class="faq-q">Can I get a refund?</div>
+        <div class="faq-a">Refund eligibility depends on timing and whether your creative has been submitted. Cancellations are accepted within 24 hours of payment if creative hasn't been submitted. See our Terms below or contact us directly.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── TERMS ── -->
+<div class="sec" id="terms">
+  <div class="sec-inner">
+    <div class="sec-eyebrow reveal">Terms & Refund Policy</div>
+    <h2 class="sec-title reveal reveal-delay-1">THE FINE PRINT</h2>
+
+    <div class="terms-section reveal" style="margin-top:24px;background:var(--navy-l);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius-lg);padding:28px 24px">
+      <h3>1. Booking & Payment</h3>
+      <p>All ad slots are confirmed only once payment in ETH is verified on the Ethereum blockchain. Bookings are first-come, first-served. Until on-chain confirmation is received, a slot is not guaranteed.</p>
+      <h3>2. Ad Creative</h3>
+      <p>Clients must submit creative assets within 48 hours of payment confirmation. We reserve the right to reject content that is unlawful, offensive, or does not meet broadcast standards. If creative is not received in time, the slot may be forfeited without refund.</p>
+      <h3>3. Match Postponement or Cancellation</h3>
+      <p>If the match day associated with your booking is postponed, your ad will be automatically rescheduled to air the day after the next available match day at no additional cost. If the tournament is cancelled entirely, clients will be offered a full refund to the originating wallet address.</p>
+      <h3>4. Cancellations & Refunds</h3>
+      <p>Clients may request a cancellation and refund within 24 hours of payment confirmation, provided creative has not yet been submitted or scheduled. After this window, bookings are non-refundable. Refunds are issued in ETH to the original wallet address.</p>
+      <h3>5. Restricted Content</h3>
+      <p>We do not accept advertisements promoting illegal goods or services, gambling where prohibited, tobacco, or content violating broadcast standards. We reserve the right to decline any booking at our discretion.</p>
+      <h3>6. Contact</h3>
+      <p>For any questions, contact us at <a href="mailto:Romygai@outlook.com">Romygai@outlook.com</a>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── BOOKING FORM ── -->
+<div id="book">
+
+<div class="prog-outer" id="progOuter">
+  <div class="prog-bar">
+    <div class="prog-step active" id="pi1"><div class="step-dot">1</div><div class="step-lbl">Package</div></div>
+    <div class="prog-step" id="pi2"><div class="step-dot">2</div><div class="step-lbl">Details</div></div>
+    <div class="prog-step" id="pi3"><div class="step-dot">3</div><div class="step-lbl">Pay</div></div>
+  </div>
+</div>
+
+<div class="form-outer">
+
+<!-- STEP 1 -->
+<div class="step-panel active" id="panel1">
+  <div class="panel-title">CHOOSE YOUR AD SLOT</div>
+  <p class="panel-desc">Select your airtime duration. All slots confirmed via Ethereum on-chain payment.</p>
+
+  <div class="eth-live-badge">
+    <div class="live-dot"></div>
+    <span class="lbl">ETH / USD live</span>
+    <span class="val" id="tickerEthVal">Loading…</span>
+    <span class="time" id="tickerTime"></span>
+  </div>
+
+  <div class="pkg-grid" id="pkgList">
+
+    <div class="pkg-card sel" id="pkg-15sec" onclick="selectPkg('15sec','Kickoff Spot',2500)">
+      <div class="pkg-check checked" id="chk-15sec"></div>
+      <div class="pkg-dur">15 Seconds</div>
+      <div class="pkg-name">Kickoff Spot</div>
+      <div class="pkg-pricing"><span class="pkg-usd">$2,500</span><span class="pkg-per">per broadcast</span></div>
+      <div class="pkg-eth-line" id="pe-15">≈ loading ETH</div>
+      <div class="pkg-features">
+        <div class="pkg-feature">15-second brand spot across all match-day streams</div>
+        <div class="pkg-feature">Airs the day after the next match day</div>
+        <div class="pkg-feature">On-chain ETH payment confirmation</div>
+      </div>
+    </div>
+
+    <div class="pkg-card" id="pkg-30sec" onclick="selectPkg('30sec','Champion Cut',5500)">
+      <div class="pkg-popular">POPULAR</div>
+      <div class="pkg-check" id="chk-30sec"></div>
+      <div class="pkg-dur">30 Seconds</div>
+      <div class="pkg-name">Champion Cut</div>
+      <div class="pkg-pricing"><span class="pkg-usd">$5,500</span><span class="pkg-per">per broadcast</span></div>
+      <div class="pkg-eth-line" id="pe-30">≈ loading ETH</div>
+      <div class="pkg-features">
+        <div class="pkg-feature">30-second premium mid-break placement</div>
+        <div class="pkg-feature">Airs the day after the next match day</div>
+        <div class="pkg-feature">On-chain ETH payment confirmation</div>
+        <div class="pkg-feature">Full story + call-to-action included</div>
+      </div>
+    </div>
+
+    <div class="pkg-card" id="pkg-45sec" onclick="selectPkg('45sec','Stadium Slot',8500)">
+      <div class="pkg-check" id="chk-45sec"></div>
+      <div class="pkg-dur">45 Seconds</div>
+      <div class="pkg-name">Stadium Slot</div>
+      <div class="pkg-pricing"><span class="pkg-usd">$8,500</span><span class="pkg-per">per broadcast</span></div>
+      <div class="pkg-eth-line" id="pe-45">≈ loading ETH</div>
+      <div class="pkg-features">
+        <div class="pkg-feature">45-second extended slot — premium break position</div>
+        <div class="pkg-feature">Airs the day after the next match day</div>
+        <div class="pkg-feature">Ideal for product launches and testimonials</div>
+      </div>
+    </div>
+
+    <div class="pkg-card" id="pkg-60sec" onclick="selectPkg('60sec','Trophy Takeover',12000)">
+      <div class="pkg-check" id="chk-60sec"></div>
+      <div class="pkg-dur">60 Seconds</div>
+      <div class="pkg-name">Trophy Takeover</div>
+      <div class="pkg-pricing"><span class="pkg-usd">$12,000</span><span class="pkg-per">per broadcast</span></div>
+      <div class="pkg-eth-line" id="pe-60">≈ loading ETH</div>
+      <div class="pkg-features">
+        <div class="pkg-feature">Full 60-second cinematic takeover</div>
+        <div class="pkg-feature">Limited slots — guaranteed premium position</div>
+        <div class="pkg-feature">On-chain ETH payment confirmation</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BROADCAST PREVIEW -->
+  <div class="broadcast-preview">
+    <div class="preview-label">Live Broadcast Preview</div>
+    <div class="preview-screen">
+      <div class="preview-header">
+        <span style="display:flex;align-items:center">
+          <span class="preview-header-dot"></span>
+          <span class="preview-header-title">Match Day Broadcast</span>
+        </span>
+        <span class="preview-timer-badge" id="prevDurBadge">15 SEC AD</span>
+      </div>
+      <div class="preview-inner">
+        <div class="preview-ad-strip">
+          <div class="preview-ad-brand">⚡ Ad Spot</div>
+          <div class="preview-ad-title">YOUR BRAND HERE</div>
+          <div class="preview-ad-desc">Seen by millions during World Cup 2026 · Etherscan verified</div>
+        </div>
+      </div>
+      <div class="preview-progress"><div class="preview-progress-bar" id="prevBar"></div></div>
+    </div>
+  </div>
+
+  <button class="btn-gold" onclick="goStep(2)">Continue to Business Details →</button>
+</div>
+
+<!-- STEP 2 -->
+<div class="step-panel" id="panel2">
+  <div class="panel-title">BUSINESS DETAILS</div>
+  <p class="panel-desc">Tell us about your business so we can match your ad to the right broadcast window.</p>
+
+  <div class="field"><label class="field-lbl" for="ceoName">CEO / Contact Name *</label><input type="text" id="ceoName" class="field-inp" placeholder="e.g. John Doe"></div>
+  <div class="field"><label class="field-lbl" for="bizName">Business Name *</label><input type="text" id="bizName" class="field-inp" placeholder="e.g. Acme Corp."></div>
+  <div class="field"><label class="field-lbl" for="bizNature">Industry *</label>
+    <select id="bizNature" class="field-inp">
+      <option value="" disabled selected>Select your industry</option>
+      <option>Retail & E-commerce</option><option>Food & Beverage</option>
+      <option>Sports & Fitness</option><option>Technology & Software</option>
+      <option>Financial Services</option><option>Fashion & Apparel</option>
+      <option>Healthcare & Wellness</option><option>Media & Entertainment</option>
+      <option>Travel & Tourism</option><option>Real Estate</option><option>Other</option>
+    </select>
+  </div>
+  <div class="field"><label class="field-lbl" for="contactEmail">Email Address *</label><input type="email" id="contactEmail" class="field-inp" placeholder="you@yourbusiness.com"></div>
+  <div class="field">
+    <label class="field-lbl" for="phone">Phone Number</label>
+    <div style="display:flex;gap:8px">
+      <select id="phoneCode" class="field-inp" style="flex:0 0 110px">
+        <option value="" disabled selected>Code</option>
+        <option value="+1">+1 (US/CA)</option><option value="+20">+20 (EG)</option>
+        <option value="+27">+27 (ZA)</option><option value="+33">+33 (FR)</option>
+        <option value="+34">+34 (ES)</option><option value="+39">+39 (IT)</option>
+        <option value="+44">+44 (UK)</option><option value="+49">+49 (DE)</option>
+        <option value="+52">+52 (MX)</option><option value="+55">+55 (BR)</option>
+        <option value="+61">+61 (AU)</option><option value="+81">+81 (JP)</option>
+        <option value="+86">+86 (CN)</option><option value="+91">+91 (IN)</option>
+        <option value="+212">+212 (MA)</option><option value="+233">+233 (GH)</option>
+        <option value="+234">+234 (NG)</option><option value="+254">+254 (KE)</option>
+        <option value="+966">+966 (SA)</option><option value="+971">+971 (AE)</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="tel" id="phone" class="field-inp" placeholder="Phone number" style="flex:1">
+    </div>
+  </div>
+  <div class="field"><label class="field-lbl" for="adDesc">Ad Description / Brief *</label>
+    <textarea id="adDesc" class="field-inp" rows="3" placeholder="Briefly describe your ad content or message…"></textarea>
+    <div class="field-hint">We accept high-quality JPEG images and high-quality video files (MP4/MOV). We'll email you to collect your creative after payment is confirmed.</div>
+  </div>
+  <div class="field"><label class="field-lbl" for="country">Country *</label>
+    <select id="country" class="field-inp">
+      <option value="" disabled selected>Select country</option>
+      <option>Argentina</option><option>Australia</option><option>Brazil</option>
+      <option>Canada</option><option>China</option><option>Egypt</option>
+      <option>France</option><option>Germany</option><option>Ghana</option>
+      <option>India</option><option>Italy</option><option>Japan</option>
+      <option>Kenya</option><option>Mexico</option><option>Morocco</option>
+      <option>Nigeria</option><option>Saudi Arabia</option><option>South Africa</option>
+      <option>South Korea</option><option>Spain</option><option>United Arab Emirates</option>
+      <option>United Kingdom</option><option>United States</option><option>Other</option>
+    </select>
+  </div>
+
+  <button class="btn-gold" onclick="goStep(3)">Continue to Payment →</button>
+  <button class="btn-outline" onclick="goStep(1)">← Back</button>
+</div>
+
+<!-- STEP 3 -->
+<div class="step-panel" id="panel3">
+  <div class="panel-title">PAY WITH ETH</div>
+  <p class="panel-desc">Send ETH to the address below. We watch the blockchain and confirm your payment automatically.</p>
+
+  <div class="order-box">
+    <div class="order-title">Order Summary</div>
+    <div class="order-row"><span class="lbl">Business</span><span class="val" id="s-biz">—</span></div>
+    <div class="order-row"><span class="lbl">CEO / Contact</span><span class="val" id="s-ceo">—</span></div>
+    <div class="order-row"><span class="lbl">Ad Duration</span><span class="val" id="s-dur">—</span></div>
+    <div class="order-row"><span class="lbl">Package</span><span class="val" id="s-pkg">—</span></div>
+    <div class="order-row"><span class="lbl">Next Air Date</span><span class="val" id="s-airdate">—</span></div>
+    <div class="order-total">
+      <span style="font-size:13px;font-weight:800">Total Due</span>
+      <div style="text-align:right">
+        <div class="order-usd" id="s-usd">—</div>
+        <div class="order-eth" id="s-eth">≈ — ETH</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="paymentPanel">
+    <div class="pay-tabs">
+      <button class="pay-tab active" id="tab-mm" onclick="switchPayTab('metamask')">🦊 MetaMask / Wallet</button>
+      <button class="pay-tab" id="tab-manual" onclick="switchPayTab('send')">📲 Send Manually</button>
+    </div>
+
+    <!-- METAMASK -->
+    <div id="mmSection">
+      <div class="mm-card">
+        <div class="net-badge"><div class="net-dot"></div>Ethereum Mainnet Only</div>
+        <div style="font-size:16px;font-weight:800;margin-bottom:6px">Pay with MetaMask or Web3 Wallet</div>
+        <div style="font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:16px;line-height:1.7">Click below to open your wallet. Once you confirm the transaction, we detect it on-chain automatically.</div>
+        <div class="mm-amount-row"><span class="lbl">You send</span><span class="val" id="mm-eth-amount">… ETH</span></div>
+        <div class="status-box" id="mmStatus"></div>
+        <button class="btn-eth" id="mmPayBtn" onclick="payWithMetaMask()">Connect Wallet & Pay</button>
+      </div>
+    </div>
+
+    <!-- MANUAL SEND -->
+    <div id="sendSection" style="display:none">
+      <div class="exact-badge">
+        <div>
+          <div class="lbl">Send EXACTLY this amount</div>
+          <div class="val" id="man-eth">… ETH</div>
+          <div class="usd" id="man-usd">≈ $—</div>
+        </div>
+        <div style="text-align:right">
+          <div class="lbl">Network</div>
+          <div style="font-size:13px;font-weight:900;color:var(--eth)">Ethereum<br>Mainnet</div>
+        </div>
+      </div>
+
+      <div class="fraud-warning">
+        ⛔ <strong>Important:</strong> Send the <em>exact</em> ETH amount shown. Underpayments, wrong networks (BSC/Polygon/Arbitrum), token transfers (USDT/USDC), and previously used transactions are all automatically rejected. Only fresh Ethereum Mainnet ETH transfers will be accepted.
+      </div>
+
+      <div class="wallet-wrap">
+        <div style="font-size:10px;font-weight:900;letter-spacing:1.5px;color:var(--gray);text-transform:uppercase;margin-bottom:8px">Send ETH to this address</div>
+        <div class="wallet-addr" id="walletAddr">0x042b01de3dcab66f3465f1d4e1cebbf00f618d2f</div>
+        <button class="copy-btn" onclick="copyAddr()">📋 Copy Address</button>
+        <div class="qr-wrap"><canvas id="qrCanvas" width="150" height="150"></canvas><div class="qr-lbl">Scan with Trust Wallet / Coinbase / any wallet</div></div>
+      </div>
+
+      <div style="font-size:11px;color:rgba(255,255,255,0.35);line-height:1.8;text-align:center;margin-bottom:16px">
+        ⚠️ Ethereum Mainnet only &nbsp;·&nbsp; Do not send ERC-20 tokens &nbsp;·&nbsp; Do not send on BSC, Polygon, Arbitrum, or any L2
+      </div>
+
+      <button class="btn-eth" onclick="startManualWatcher()" id="iSentBtn">
+        ✅ I've Sent the ETH — Watch for Payment
+      </button>
+      <div style="font-size:11px;color:var(--gray);text-align:center;margin-top:8px;line-height:1.6">
+        Once you tap this, we monitor the blockchain every 8 seconds and confirm automatically.
+      </div>
+    </div>
+
+    <!-- WATCHER -->
+    <div id="watcherPanel">
+      <div class="watcher-card">
+        <div class="watcher-icon" id="watcherIcon">🔍</div>
+        <div class="watcher-title" id="watcherTitle">WATCHING BLOCKCHAIN</div>
+        <div class="watcher-desc" id="watcherDesc">Monitoring your payment on Etherscan. Send the exact ETH amount and we'll confirm automatically.</div>
+
+        <div class="radar-wrap">
+          <div class="radar-ring"></div>
+          <div class="radar-ring"></div>
+          <div class="radar-core">⛓️</div>
+        </div>
+
+        <div class="watcher-pulse-row">
+          <div class="live-dot"></div>
+          <span id="watcherStatus">Checking Etherscan every 8 seconds…</span>
+        </div>
+
+        <div class="watcher-amount-row">
+          <span style="color:var(--gray);font-size:12px">Expected amount</span>
+          <span style="font-weight:900;color:var(--eth)" id="watcherEthAmt">… ETH</span>
+        </div>
+
+        <div id="watcherWarning"></div>
+
+        <div style="margin-top:14px;font-size:11px;color:rgba(255,255,255,0.3)">
+          <a href="https://etherscan.io/address/0x042b01de3dcab66f3465f1d4e1cebbf00f618d2f" target="_blank" style="color:var(--eth);text-decoration:none">View address on Etherscan →</a>
+        </div>
+      </div>
+      <button class="btn-outline" style="margin-top:12px" onclick="cancelWatcher()">Cancel & Go Back</button>
+    </div>
+
+  </div>
+
+  <button class="btn-outline" style="margin-top:16px" id="backBtn" onclick="goStep(2)">← Back to Details</button>
+</div>
+
+</div>
+</div>
+
+<!-- ── SUCCESS ── -->
+<div class="success-panel" id="successPanel">
+  <div class="success-icon-wrap">🏆</div>
+  <div class="success-title">CONFIRMED!</div>
+  <div class="success-subtitle" id="succ-name">Your ad slot is secured!</div>
+  <p class="success-desc">Your Ethereum payment has been verified on-chain. Your ad is now scheduled for broadcast. Our team will contact <strong id="succ-email" style="color:var(--gold)">you</strong> to finalise your creative.</p>
+
+  <div class="ref-card">
+    <div class="ref-lbl">Booking Reference</div>
+    <div class="ref-val" id="succ-ref">WC2026-0000</div>
+  </div>
+  <div class="ref-card" id="txCard" style="display:none">
+    <div class="ref-lbl">Transaction Hash</div>
+    <div class="ref-val" id="succ-tx" style="font-size:13px"></div>
+    <a class="tx-link" id="succ-etherscan" href="#" target="_blank">✓ Verified on Etherscan →</a>
+  </div>
+
+  <div class="countdown-card" id="countdownCard">
+    <div class="cd-eyebrow">⚽ Your Ad Airs In</div>
+    <div class="cd-match" id="cdMatch">Next Match Day + 1</div>
+    <div class="cd-venue" id="cdVenue">Loading next match…</div>
+    <div class="cd-grid">
+      <div class="cd-unit"><span class="cd-num" id="cdDays">00</span><span class="cd-label">Days</span></div>
+      <div class="cd-unit"><span class="cd-num" id="cdHours">00</span><span class="cd-label">Hours</span></div>
+      <div class="cd-unit"><span class="cd-num" id="cdMins">00</span><span class="cd-label">Mins</span></div>
+      <div class="cd-unit"><span class="cd-num" id="cdSecs">00</span><span class="cd-label">Secs</span></div>
+    </div>
+    <div class="cd-note">
+      Payment confirmed <strong id="cdPayDate">—</strong>.<br>
+      Next match day: <strong id="cdMatchDay">—</strong>.<br>
+      Your ad broadcasts: <strong id="cdAirDate">—</strong> 🎬
+    </div>
+  </div>
+
+  <div class="next-steps">
+    <div class="next-step-title">What Happens Next</div>
+    <div class="next-step-item"><div class="step-num">1</div><div class="step-text">Your ETH transaction is verified on Etherscan — payment confirmed.</div></div>
+    <div class="next-step-item"><div class="step-num">2</div><div class="step-text">Our team contacts you to collect your ad creative and finalise broadcast details.</div></div>
+    <div class="next-step-item"><div class="step-num">3</div><div class="step-text">Your ad goes live the day after the next World Cup match day. 🌍</div></div>
+  </div>
+
+  <a href="#" onclick="location.reload()" style="display:block;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);color:var(--navy);text-decoration:none;padding:16px;border-radius:10px;font-size:14px;font-weight:900;text-align:center;box-shadow:0 6px 24px rgba(232,160,32,0.35)">← Book Another Slot</a>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer id="contact">
+  <div style="max-width:640px;margin:0 auto">
+
+    <!-- Logo + tagline -->
+    <div style="margin-bottom:28px">
+      <div class="footer-logo">WC2026 ADS</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:0.3px">
+        The official ad booking platform for FIFA World Cup 2026 broadcasts
+      </div>
+    </div>
+
+    <!-- Nav links grid -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;margin-bottom:28px;text-align:left">
+      <a href="#packages" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:12px;font-weight:600;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Ad Packages</a>
+      <a href="#about" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:12px;font-weight:600;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">About Us</a>
+      <a href="#faq" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:12px;font-weight:600;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">FAQ</a>
+      <a href="#terms" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:12px;font-weight:600;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Terms &amp; Refund Policy</a>
+      <a href="#book" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:12px;font-weight:600;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Book a Slot</a>
+      <a href="mailto:Romygai@outlook.com" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:12px;font-weight:600;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.06);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">Contact Us</a>
+    </div>
+
+    <!-- Contact card -->
+    <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:var(--radius);padding:18px 20px;margin-bottom:22px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center">
+      <div>
+        <div style="font-size:9px;font-weight:900;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:6px">Get In Touch</div>
+        <a href="mailto:Romygai@outlook.com" style="color:rgba(255,255,255,0.8);text-decoration:none;font-size:13px;font-weight:700">Romygai@outlook.com</a>
+        <div style="font-size:11px;color:rgba(255,255,255,0.3);margin-top:4px">396 Alhambra Circle · Coral Gables, FL 33134 · USA</div>
+      </div>
+      <a href="mailto:Romygai@outlook.com" style="display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);color:var(--navy);padding:10px 20px;border-radius:8px;font-size:12px;font-weight:900;text-decoration:none;box-shadow:0 4px 16px rgba(232,160,32,0.3);flex-shrink:0">
+        ✉️ Email Us
+      </a>
+    </div>
+
+    <!-- ETH payment badge -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(98,126,234,0.06);border:1px solid rgba(98,126,234,0.15);border-radius:10px;padding:12px 20px;margin-bottom:22px">
+      <div style="width:6px;height:6px;border-radius:50%;background:var(--green-l);animation:blink 1.5s infinite;flex-shrink:0"></div>
+      <span style="font-size:11px;font-weight:700;color:rgba(255,255,255,0.6)">Payments secured via</span>
+      <span style="font-size:12px;font-weight:900;color:var(--eth)">Ethereum Mainnet</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.3)">·</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.4)">Verified on Etherscan</span>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social" style="margin-bottom:22px">
+      <a href="https://x.com/fifaworldcup" target="_blank" rel="noopener">𝕏 &nbsp;@fifaworldcup</a>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <!-- Tournament info strip -->
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin-bottom:16px">
+      <span style="font-size:11px;color:rgba(255,255,255,0.3)">⚽ Jun 11 – Jul 19, 2026</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.2)">·</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.3)">🇺🇸 USA &nbsp;🇨🇦 Canada &nbsp;🇲🇽 Mexico</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.2)">·</span>
+      <span style="font-size:11px;color:rgba(255,255,255,0.3)">48 Teams · 104 Matches</span>
+    </div>
+
+    <!-- Disclaimer -->
+    <div style="font-size:10px;color:rgba(255,255,255,0.2);line-height:1.8;text-align:center">
+      ETH prices sourced from CoinGecko · Payments verified via Etherscan API<br>
+      This platform is an independent ad booking service and is not officially affiliated with FIFA or any national football federation.<br>
+      &copy; 2026 WC2026 Ads · All rights reserved
+    </div>
+
+  </div>
+</footer>
+
+<!-- QR LIB -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+// ── SCROLL REVEAL ──────────────────────────────────────────────────────────
+(function(){
+  const els = document.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
+  if(!els.length) return;
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if(e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin:'0px 0px -40px 0px' });
+  els.forEach(el => io.observe(el));
+})();
+
+// ── ACTIVE NAV HIGHLIGHT ──────────────────────────────────────────────────
+(function(){
+  const sections = ['packages','about','faq','terms','book'];
+  const links = document.querySelectorAll('.nav-link');
+  function onScroll(){
+    let current='';
+    sections.forEach(id=>{
+      const el=document.getElementById(id);
+      if(el && window.scrollY >= el.offsetTop - 100) current=id;
+    });
+    links.forEach(l=>{
+      l.style.color = l.getAttribute('href')==='#'+current ? 'var(--gold)' : '';
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+})();
+
+// ── HERO PARALLAX (subtle) ─────────────────────────────────────────────────
+(function(){
+  const bg = document.querySelector('.hero-bg');
+  if(!bg || window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  window.addEventListener('scroll', ()=>{
+    const y = window.scrollY;
+    if(y < window.innerHeight) bg.style.transform = 'scale(1.05) translateY('+(y*0.10)+'px)';
+  }, {passive:true});
+})();
+
+// ── COUNTER ANIMATION for stat-nums ───────────────────────────────────────
+(function(){
+  const stats = document.querySelectorAll('.stat-num');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      const el = e.target;
+      const raw = el.textContent.trim();
+      const num = parseFloat(raw);
+      if(isNaN(num)) return;
+      const suffix = raw.replace(String(num),'');
+      let start = 0;
+      const step = (timestamp) => {
+        if(!start) start = timestamp;
+        const p = Math.min((timestamp-start)/1200,1);
+        const ease = 1-Math.pow(1-p,3);
+        el.textContent = Math.round(ease*num) + suffix;
+        if(p<1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+      io.unobserve(el);
+    });
+  },{threshold:0.8});
+  stats.forEach(s=>io.observe(s));
+})();
+
+// ── FAQ ACCORDION ──────────────────────────────────────────────────────────
+(function(){
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    const q = item.querySelector('.faq-q');
+    const a = item.querySelector('.faq-a');
+    if(!q || !a) return;
+    // store natural height
+    a.style.overflow = 'hidden';
+    a.style.transition = 'max-height 0.35s ease, opacity 0.3s ease, padding 0.3s ease';
+    a.style.maxHeight = a.scrollHeight+'px';
+    a.style.opacity = '1';
+    q.style.cursor = 'pointer';
+    q.style.userSelect = 'none';
+    q.style.display = 'flex';
+    q.style.justifyContent = 'space-between';
+    q.style.alignItems = 'center';
+    // add chevron
+    const chev = document.createElement('span');
+    chev.textContent = '▲';
+    chev.style.cssText='font-size:9px;color:var(--gold);transition:transform 0.3s ease;margin-left:12px;flex-shrink:0';
+    q.appendChild(chev);
+    let open = true;
+    q.addEventListener('click', ()=>{
+      open = !open;
+      a.style.maxHeight  = open ? a.scrollHeight+'px' : '0px';
+      a.style.opacity    = open ? '1' : '0';
+      a.style.paddingTop = open ? '' : '0';
+      chev.style.transform = open ? 'rotate(0deg)' : 'rotate(180deg)';
+    });
+  });
+})();
+// ═══════════════════════════════════════════════════════════
+// PAYMENT SYSTEM — ANTI-FRAUD HARDENED (unchanged logic)
+// ═══════════════════════════════════════════════════════════
+
+const WALLET            = '0x042b01de3dcab66f3465f1d4e1cebbf00f618d2f';
+const WALLET_LC         = WALLET.toLowerCase();
+const AMOUNT_TOLERANCE  = 0.005;
+const POLL_INTERVAL_MS  = 8000;
+const MAX_POLL_ATTEMPTS = 75;
+const SESSION_START_BUFFER_MS = 30000;
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xjgdaojz';
+
+const usedTxHashes = new Set(JSON.parse(sessionStorage.getItem('wc_used_txs') || '[]'));
+function markTxUsed(h) { usedTxHashes.add(h.toLowerCase()); sessionStorage.setItem('wc_used_txs', JSON.stringify([...usedTxHashes])); }
+function isTxUsed(h) { return usedTxHashes.has((h||'').toLowerCase()); }
+
+let ethPrice = null;
+let selPkg = { id:'15sec', name:'Kickoff Spot', usd:2500 };
+let paymentTxHash = null;
+let bookingRef = null;
+let watcherInterval = null;
+let watcherSessionStart = null;
+let seenHashes = new Set();
+let wrongAmountCount = 0;
+
+const MATCH_DAYS = [
+  {date:'2026-06-11',matches:'Mexico vs South Africa (Opening)'},
+  {date:'2026-06-12',matches:'USA vs Paraguay · Canada vs Bosnia'},
+  {date:'2026-06-13',matches:'Brazil vs Morocco · Qatar vs Switzerland · Haiti vs Scotland'},
+  {date:'2026-06-14',matches:'Argentina vs Albania · France vs Norway'},
+  {date:'2026-06-15',matches:'Spain vs Cape Verde · Saudi Arabia vs Uruguay · Belgium vs Egypt'},
+  {date:'2026-06-16',matches:'France vs Senegal · England vs Ghana'},
+  {date:'2026-06-17',matches:'England vs Croatia · Germany vs Ecuador'},
+  {date:'2026-06-18',matches:'Mexico vs South Korea · Switzerland vs Bosnia · Canada vs Qatar'},
+  {date:'2026-06-19',matches:'Brazil vs Haiti · Scotland vs Morocco'},
+  {date:'2026-06-20',matches:'Argentina vs Venezuela · Portugal vs Namibia'},
+  {date:'2026-06-21',matches:'Spain vs Saudi Arabia · Belgium vs Iran'},
+  {date:'2026-06-22',matches:'France vs Norway · Colombia vs Uzbekistan'},
+  {date:'2026-06-23',matches:'England vs Ghana · USA vs Australia'},
+  {date:'2026-06-24',matches:'Brazil vs Scotland · Spain vs Morocco · USA vs Turkey'},
+  {date:'2026-06-25',matches:'Germany vs Ecuador · France vs Norway'},
+  {date:'2026-06-26',matches:'Argentina vs Venezuela · Round of 32 first legs'},
+  {date:'2026-06-27',matches:'Panama vs England · Round of 32'},
+  {date:'2026-06-28',matches:'Round of 32'},{date:'2026-06-29',matches:'Round of 32'},
+  {date:'2026-06-30',matches:'Round of 32'},{date:'2026-07-01',matches:'Round of 32'},
+  {date:'2026-07-02',matches:'Round of 32'},{date:'2026-07-03',matches:'Round of 16'},
+  {date:'2026-07-04',matches:'Round of 16'},{date:'2026-07-05',matches:'Round of 16'},
+  {date:'2026-07-06',matches:'Round of 16'},{date:'2026-07-10',matches:'Quarterfinals'},
+  {date:'2026-07-11',matches:'Quarterfinals'},{date:'2026-07-14',matches:'Semifinals'},
+  {date:'2026-07-15',matches:'Semifinals'},{date:'2026-07-18',matches:'Third Place Play-off'},
+  {date:'2026-07-19',matches:'WORLD CUP FINAL · MetLife Stadium, NJ'},
+];
+
+async function fetchEthPrice() {
+  try {
+    const r = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd');
+    const d = await r.json();
+    ethPrice = d.ethereum.usd;
+    updateAllEthDisplays();
+    const now = new Date();
+    ['tickerTime','heroEthTime'].forEach(id => {
+      const el = document.getElementById(id);
+      if(el) el.textContent = 'Updated ' + now.getHours() + ':' + String(now.getMinutes()).padStart(2,'0');
+    });
+  } catch(e) {
+    ['tickerEthVal','heroEthPrice'].forEach(id => {
+      const el = document.getElementById(id); if(el) el.textContent='Unavailable';
+    });
+  }
+}
+function toEth(usd) { return ethPrice ? (usd/ethPrice).toFixed(6) : null; }
+function fmtEth(usd) { const e=toEth(usd); return e ? e+' ETH' : '—'; }
+function toWei(eth) { return Math.round(parseFloat(eth)*1e18); }
+
+function updateAllEthDisplays() {
+  const ps='$'+ethPrice.toLocaleString();
+  ['tickerEthVal','heroEthPrice'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=ps;});
+  [['15',2500],['30',5500],['45',8500],['60',12000]].forEach(([s,u])=>{
+    const a=document.getElementById('pe-'+s), b=document.getElementById('prev-eth-'+s);
+    if(a) a.textContent='≈ '+fmtEth(u);
+    if(b) b.textContent='≈ '+fmtEth(u);
+  });
+}
+
+const pkgData = {
+  '15sec':{name:'Kickoff Spot',dur:'15 seconds',usd:2500},
+  '30sec':{name:'Champion Cut',dur:'30 seconds',usd:5500},
+  '45sec':{name:'Stadium Slot',dur:'45 seconds',usd:8500},
+  '60sec':{name:'Trophy Takeover',dur:'60 seconds',usd:12000},
+};
+
+function selectPkg(id, name, usd) {
+  ['15sec','30sec','45sec','60sec'].forEach(s=>{
+    const c=document.getElementById('pkg-'+s), k=document.getElementById('chk-'+s);
+    if(c) c.classList.remove('sel'); if(k) k.classList.remove('checked');
+  });
+  const chosen=document.getElementById('pkg-'+id), chkEl=document.getElementById('chk-'+id);
+  if(chosen) chosen.classList.add('sel'); if(chkEl) chkEl.classList.add('checked');
+  selPkg={id,name,usd};
+  const dur=parseInt(id);
+  const badge=document.getElementById('prevDurBadge');
+  if(badge) badge.textContent=dur+' SEC AD';
+  startPreviewAnimation(dur);
+}
+
+let prevTimer=null;
+function startPreviewAnimation(seconds) {
+  if(prevTimer) clearInterval(prevTimer);
+  const bar=document.getElementById('prevBar');
+  if(!bar) return;
+  bar.style.width='0%';
+  let elapsed=0;
+  prevTimer=setInterval(()=>{
+    elapsed+=50;
+    bar.style.width=Math.min((elapsed/(seconds*1000))*100,100)+'%';
+    if(elapsed>=seconds*1000){
+      clearInterval(prevTimer);
+      setTimeout(()=>{bar.style.width='0%';startPreviewAnimation(seconds);},800);
+    }
+  },50);
+}
+
+function goStep(n) {
+  if(n===2 && !validateStep1()) return;
+  if(n===3 && !validateStep2()) return;
+  document.querySelectorAll('.step-panel').forEach(p=>p.classList.remove('active'));
+  document.getElementById('panel'+n).classList.add('active');
+  [1,2,3].forEach(i=>{
+    const el=document.getElementById('pi'+i); if(!el) return;
+    el.classList.remove('active','done');
+    if(i<n) el.classList.add('done');
+    if(i===n) el.classList.add('active');
+  });
+  if(n===3) populateOrderSummary();
+  const prog=document.getElementById('progOuter');
+  if(prog) prog.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function validateStep1() { return true; }
+function validateStep2() {
+  const ids=['ceoName','bizName','bizNature','contactEmail','adDesc','country'];
+  let ok=true;
+  ids.forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el.value.trim()){el.classList.add('err');setTimeout(()=>el.classList.remove('err'),2500);ok=false;}
+  });
+  if(!ok) alert('Please fill in all required fields.');
+  return ok;
+}
+
+function populateOrderSummary() {
+  const airDate=getAirDate();
+  document.getElementById('s-biz').textContent    = document.getElementById('bizName').value;
+  document.getElementById('s-ceo').textContent    = document.getElementById('ceoName').value;
+  document.getElementById('s-dur').textContent    = pkgData[selPkg.id].dur;
+  document.getElementById('s-pkg').textContent    = selPkg.name;
+  document.getElementById('s-airdate').textContent= airDate.airDateStr+' (day after next match)';
+  document.getElementById('s-usd').textContent    = '$'+selPkg.usd.toLocaleString();
+  document.getElementById('s-eth').textContent    = '≈ '+fmtEth(selPkg.usd);
+  document.getElementById('mm-eth-amount').textContent=(toEth(selPkg.usd)||'—')+' ETH';
+  document.getElementById('man-eth').textContent  =(toEth(selPkg.usd)||'—')+' ETH';
+  document.getElementById('man-usd').textContent  ='≈ $'+selPkg.usd.toLocaleString();
+  document.getElementById('walletAddr').textContent=WALLET;
+  setTimeout(drawQR,200);
+}
+
+function getAirDate() {
+  const today=new Date(); today.setHours(0,0,0,0);
+  let nm=null;
+  for(const m of MATCH_DAYS){const d=new Date(m.date+'T00:00:00');if(d>=today){nm=m;break;}}
+  if(!nm) return{matchDateStr:'Jul 19, 2026 (Final)',airDateStr:'Jul 20, 2026',airDate:new Date('2026-07-20')};
+  const md=new Date(nm.date+'T00:00:00');
+  const ad=new Date(md); ad.setDate(ad.getDate()+1);
+  const opts={month:'short',day:'numeric',year:'numeric'};
+  return{matchDateStr:md.toLocaleDateString('en-US',opts)+' — '+nm.matches,matchDate:md,airDate:ad,airDateStr:ad.toLocaleDateString('en-US',opts)};
+}
+
+function startCountdown(airDate) {
+  function tick(){
+    let diff=Math.max(airDate-new Date(),0);
+    document.getElementById('cdDays').textContent =String(Math.floor(diff/86400000)).padStart(2,'0');
+    document.getElementById('cdHours').textContent=String(Math.floor((diff%86400000)/3600000)).padStart(2,'0');
+    document.getElementById('cdMins').textContent =String(Math.floor((diff%3600000)/60000)).padStart(2,'0');
+    document.getElementById('cdSecs').textContent =String(Math.floor((diff%60000)/1000)).padStart(2,'0');
+  }
+  tick(); setInterval(tick,1000);
+}
+
+function drawQR() {
+  const canvas=document.getElementById('qrCanvas');
+  const ea=toEth(selPkg.usd)||'0';
+  const uri='ethereum:'+WALLET+'?value='+toWei(ea);
+  try{new QRCode(canvas,{text:uri,width:150,height:150,colorDark:'#627EEA',colorLight:'#060F1E'});}catch(e){}
+}
+
+function copyAddr() {
+  navigator.clipboard.writeText(WALLET).then(()=>{
+    const btn=document.querySelector('.copy-btn');
+    btn.textContent='✓ Copied!';btn.style.color='#4ADE80';
+    setTimeout(()=>{btn.textContent='📋 Copy Address';btn.style.color='';},2200);
+  });
+}
+
+function switchPayTab(tab) {
+  document.getElementById('tab-mm').classList.toggle('active',tab==='metamask');
+  document.getElementById('tab-manual').classList.toggle('active',tab==='send');
+  document.getElementById('mmSection').style.display  =tab==='metamask'?'block':'none';
+  document.getElementById('sendSection').style.display=tab==='send'?'block':'none';
+}
+
+function showWatcher(ethAmt) {
+  document.getElementById('mmSection').style.display   ='none';
+  document.getElementById('sendSection').style.display ='none';
+  document.querySelector('.pay-tabs').style.display    ='none';
+  document.getElementById('backBtn').style.display     ='none';
+  document.getElementById('watcherPanel').style.display='block';
+  document.getElementById('watcherEthAmt').textContent =ethAmt+' ETH';
+  document.getElementById('watcherIcon').textContent  ='🔍';
+  document.getElementById('watcherTitle').textContent ='WATCHING BLOCKCHAIN';
+  document.getElementById('watcherTitle').style.color ='var(--eth)';
+  document.getElementById('watcherDesc').textContent  ='Monitoring your payment on Etherscan every 8 seconds. We'll confirm automatically — no manual input needed.';
+}
+
+function cancelWatcher() {
+  stopWatcher(); wrongAmountCount=0;
+  document.getElementById('watcherPanel').style.display='none';
+  document.querySelector('.pay-tabs').style.display='';
+  document.getElementById('backBtn').style.display='';
+  switchPayTab('metamask');
+  const btn=document.getElementById('mmPayBtn');
+  btn.disabled=false; btn.innerHTML='Connect Wallet &amp; Pay';
+  setStatus(document.getElementById('mmStatus'),'','');
+}
+
+function stopWatcher() {
+  if(watcherInterval){clearInterval(watcherInterval);watcherInterval=null;}
+}
+
+async function startBlockchainWatcher(ethAmt, onConfirmed) {
+  stopWatcher();
+  wrongAmountCount=0; watcherSessionStart=Date.now(); seenHashes=new Set();
+  try{const snap=await fetchAddressTxs();if(snap)snap.forEach(tx=>seenHashes.add(tx.hash.toLowerCase()));}catch(e){}
+  const expectedWei=toWei(ethAmt);
+  const minWei=Math.floor(expectedWei*(1-AMOUNT_TOLERANCE));
+  const maxWei=Math.ceil(expectedWei*(1+AMOUNT_TOLERANCE));
+  let attempts=0;
+  const statusEl=document.getElementById('watcherStatus');
+  watcherInterval=setInterval(async()=>{
+    attempts++;
+    const elapsed=Math.floor((Date.now()-watcherSessionStart)/1000);
+    const mins=Math.floor(elapsed/60), secs=elapsed%60;
+    statusEl.textContent='Scanning blockchain… '+(mins>0?mins+'m ':'')+secs+'s elapsed';
+    let txs;
+    try{txs=await fetchAddressTxs();}catch(e){return;}
+    if(!txs) return;
+    for(const tx of txs){
+      const hash=(tx.hash||'').toLowerCase();
+      if(seenHashes.has(hash)) continue;
+      seenHashes.add(hash);
+      if((tx.to||'').toLowerCase()!==WALLET_LC) continue;
+      if(tx.isError!=='0'){setWatcherWarning('A failed transaction was detected and ignored.');continue;}
+      const vWei=parseInt(tx.value||'0',10);
+      if(vWei===0){setWatcherWarning('⛔ Token transfer detected and rejected. Send native ETH only.');continue;}
+      const txMs=parseInt(tx.timeStamp||'0',10)*1000;
+      if(txMs<watcherSessionStart-SESSION_START_BUFFER_MS){setWatcherWarning('⏰ An old transaction was detected and rejected. Only fresh payments are accepted.');continue;}
+      if(isTxUsed(hash)){setWatcherWarning('❌ This transaction has already been used for a previous booking.');continue;}
+      if(vWei<minWei){
+        wrongAmountCount++;
+        const fw=wrongAmountCount>=2?'⚠️ Multiple underpayments detected. Contact support if this is an error.':'⛔ Insufficient payment detected ('+(vWei/1e18).toFixed(6)+' ETH received, '+ethAmt+' ETH required).';
+        setWatcherWarning(fw); continue;
+      }
+      stopWatcher(); markTxUsed(hash);
+      document.getElementById('watcherIcon').textContent ='✅';
+      document.getElementById('watcherTitle').textContent='PAYMENT CONFIRMED!';
+      document.getElementById('watcherTitle').style.color='var(--green-l)';
+      document.getElementById('watcherDesc').textContent ='Transaction verified on Etherscan. Preparing your booking…';
+      statusEl.textContent='Confirmed · TX: '+hash.slice(0,18)+'…';
+      paymentTxHash=tx.hash;
+      setTimeout(()=>onConfirmed(tx.hash),1600);
+      return;
+    }
+    if(attempts>=MAX_POLL_ATTEMPTS){
+      stopWatcher();
+      document.getElementById('watcherIcon').textContent ='⏰';
+      document.getElementById('watcherTitle').textContent='TIMED OUT';
+      document.getElementById('watcherTitle').style.color='#F08080';
+      document.getElementById('watcherDesc').textContent ='Auto-detection timed out after 10 minutes. If you sent the ETH, please contact us with your transaction hash at Romygai@outlook.com.';
+      statusEl.textContent='Stopped after 10 minutes.';
+    }
+  },POLL_INTERVAL_MS);
+}
+
+function setWatcherWarning(msg) {
+  const el=document.getElementById('watcherWarning');
+  if(el){el.textContent=msg;el.style.display='block';setTimeout(()=>{el.style.display='none';},8000);}
+}
+
+async function fetchAddressTxs() {
+  const base='https://api.etherscan.io/api?module=account&action=txlist&address='+WALLET+'&startblock=0&endblock=99999999&page=1&offset=25&sort=desc';
+  for(const url of[base+'&apikey=PCAAZ6NUKYKF5DBQFEN34Y6IK3UUB1Y9I4',base]){
+    try{const r=await fetch(url);const d=await r.json();if(d.status==='1'&&Array.isArray(d.result)) return d.result;}catch(e){}
+  }
+  return null;
+}
+
+async function payWithMetaMask() {
+  const btn=document.getElementById('mmPayBtn');
+  const statusEl=document.getElementById('mmStatus');
+  const ethAmt=toEth(selPkg.usd);
+  if(!ethAmt){setStatus(statusEl,'error','ETH price unavailable. Refresh and try again.');return;}
+  if(typeof window.ethereum==='undefined'){setStatus(statusEl,'error','No Web3 wallet found. Install MetaMask or use the Send Manually tab.');return;}
+  try{
+    btn.disabled=true; btn.innerHTML='<span class="spin"></span>Connecting wallet…';
+    setStatus(statusEl,'pending','🔗 Connecting to your wallet…');
+    const accounts=await window.ethereum.request({method:'eth_requestAccounts'});
+    const chainId=await window.ethereum.request({method:'eth_chainId'});
+    if(chainId!=='0x1'){
+      setStatus(statusEl,'error','⛔ Wrong network (Chain ID: '+parseInt(chainId,16)+'). Switch to Ethereum Mainnet and try again.');
+      btn.disabled=false; btn.innerHTML='Connect Wallet &amp; Pay'; return;
+    }
+    setStatus(statusEl,'pending','📝 Please confirm the transaction in MetaMask…');
+    btn.innerHTML='<span class="spin"></span>Waiting for signature…';
+    const exactWei=toWei(ethAmt);
+    const weiHex='0x'+exactWei.toString(16);
+    await window.ethereum.request({method:'eth_sendTransaction',params:[{from:accounts[0],to:WALLET,value:weiHex,chainId:'0x1'}]});
+    btn.innerHTML='✓ Sent — Detecting on blockchain…';
+    showWatcher(ethAmt);
+    startBlockchainWatcher(ethAmt,confirmedTx=>showSuccess(confirmedTx));
+  }catch(err){
+    const msg=err.code===4001?'Transaction cancelled by user.':(err.message||'Transaction failed. Please try again.');
+    setStatus(statusEl,'error',msg);
+    btn.disabled=false; btn.innerHTML='Connect Wallet &amp; Pay';
+  }
+}
+
+function startManualWatcher() {
+  const ethAmt=toEth(selPkg.usd)||'0';
+  const btn=document.getElementById('iSentBtn');
+  if(btn){btn.disabled=true;btn.innerHTML='<span class="spin"></span>Monitoring blockchain…';}
+  showWatcher(ethAmt);
+  startBlockchainWatcher(ethAmt,confirmedTx=>showSuccess(confirmedTx));
+}
+
+function showSuccess(txHash) {
+  stopWatcher();
+  document.getElementById('progOuter').style.display='none';
+  document.querySelector('.form-outer').style.display='none';
+  const ref='WC2026-'+Math.floor(10000+Math.random()*90000);
+  bookingRef=ref;
+  document.getElementById('succ-name').textContent  ='Welcome, '+document.getElementById('ceoName').value+'!';
+  document.getElementById('succ-email').textContent =document.getElementById('contactEmail').value;
+  document.getElementById('succ-ref').textContent   =ref;
+  if(txHash&&txHash.startsWith('0x')){
+    document.getElementById('succ-tx').textContent       =txHash;
+    document.getElementById('succ-etherscan').href       ='https://etherscan.io/tx/'+txHash;
+    document.getElementById('txCard').style.display      ='block';
+  }
+  const ai=getAirDate();
+  const pd=new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+  const parts=ai.matchDateStr.split(' — ');
+  document.getElementById('cdMatch').textContent  =parts[0]||'Next Match Day';
+  document.getElementById('cdVenue').textContent  =parts[1]||ai.matchDateStr;
+  document.getElementById('cdPayDate').textContent=pd;
+  document.getElementById('cdMatchDay').textContent=parts[0];
+  document.getElementById('cdAirDate').textContent=ai.airDateStr;
+  startCountdown(ai.airDate);
+  sendBookingNotification(ref,txHash,ai);
+  document.getElementById('successPanel').classList.add('active');
+  document.getElementById('successPanel').scrollIntoView({behavior:'smooth'});
+}
+
+function sendBookingNotification(ref,txHash,airInfo) {
+  if(!FORMSPREE_ENDPOINT||FORMSPREE_ENDPOINT.includes('YOUR_FORM_ID')) return;
+  const payload={
+    _subject:'New WC2026 Ad Booking — '+ref,
+    bookingRef:ref,
+    ceoName:document.getElementById('ceoName').value,
+    businessName:document.getElementById('bizName').value,
+    industry:document.getElementById('bizNature').value,
+    email:document.getElementById('contactEmail').value,
+    phoneCode:document.getElementById('phoneCode').value,
+    phone:document.getElementById('phone').value,
+    adDescription:document.getElementById('adDesc').value,
+    country:document.getElementById('country').value,
+    package:selPkg.name,
+    duration:pkgData[selPkg.id].dur,
+    usdAmount:'$'+selPkg.usd.toLocaleString(),
+    ethAmount:(toEth(selPkg.usd)||'—')+' ETH',
+    txHash:txHash||'n/a',
+    etherscanLink:txHash?('https://etherscan.io/tx/'+txHash):'n/a',
+    nextAirDate:airInfo.airDateStr,
+  };
+  fetch(FORMSPREE_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)})
+    .then(r=>{if(r.ok)console.log('[WC2026] Booking notification sent.');else console.warn('[WC2026] Notification failed:',r.status);})
+    .catch(e=>console.warn('[WC2026] Notification error:',e));
+}
+
+function setStatus(el, type, msg) {
+  if(!el) return;
+  el.className='status-box'+(msg?' show '+type:'');
+  el.textContent=msg;
+}
+
+fetchEthPrice();
+setInterval(fetchEthPrice,60000);
+startPreviewAnimation(15);
+
+// ── WHY-CARD CSS TRANSITIONS (applied via JS since inline styles override CSS) ──
+document.querySelectorAll('.why-card').forEach(card => {
+  card.style.transition = 'border-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease';
+  card.addEventListener('mouseenter', () => {
+    card.style.borderColor = 'rgba(232,160,32,0.35)';
+    card.style.transform   = 'translateY(-3px)';
+    card.style.boxShadow   = '0 10px 32px rgba(0,0,0,0.3)';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.borderColor = 'rgba(255,255,255,0.07)';
+    card.style.transform   = '';
+    card.style.boxShadow   = '';
+  });
+});
+
+// ── FLOATING MOBILE CTA ────────────────────────────────────────────────────
+(function(){
+  const fab = document.getElementById('floatCTA');
+  if(!fab) return;
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    const bookEl = document.getElementById('book');
+    const successEl = document.getElementById('successPanel');
+    const nearBook = bookEl && y + window.innerHeight > bookEl.offsetTop - 100;
+    const onSuccess = successEl && successEl.classList.contains('active');
+    if(nearBook || onSuccess) {
+      fab.style.opacity = '0';
+      fab.style.pointerEvents = 'none';
+    } else {
+      fab.style.opacity = y > 300 ? '1' : '0';
+      fab.style.pointerEvents = y > 300 ? 'auto' : 'none';
+    }
+    lastY = y;
+  }, {passive:true});
+})();
+</script>
+<!-- ── FLOATING MOBILE CTA ── -->
+<a href="#book" id="floatCTA" style="
+  display:none;
+  position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+  background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 100%);
+  color:var(--navy);padding:14px 32px;border-radius:100px;
+  font-size:13px;font-weight:900;text-decoration:none;
+  box-shadow:0 8px 28px rgba(232,160,32,0.5);
+  z-index:150;white-space:nowrap;letter-spacing:0.5px;
+  opacity:0;pointer-events:none;
+  transition:opacity 0.3s ease;
+">⚽ Book Your Ad Slot</a>
+
+</body>
+</html>
